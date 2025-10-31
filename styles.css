@@ -64,7 +64,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #3498db;
+  color: #02c39a;
 }
 
 .nav-link::after {
@@ -74,7 +74,7 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #3498db;
+  background-color: #02c39a;
   transition: width 0.3s ease;
 }
 
@@ -127,8 +127,8 @@ body {
 
 .dropdown-link:hover {
   background-color: #f8f9fa;
-  border-left-color: #3498db;
-  color: #3498db;
+  border-left-color: #02c39a;
+  color: #02c39a;
   padding-left: 25px;
 }
 
@@ -217,7 +217,7 @@ body {
 }
 
 .cta-button {
-  background: #2e7d32;
+  background: #02c39a;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -231,7 +231,7 @@ body {
 }
 
 .cta-button:hover {
-  background: #246628;
+  background: #019f7a;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -279,7 +279,7 @@ body {
 
 .feature-icon {
   font-size: 3rem;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 1.5rem;
 }
 
@@ -353,12 +353,12 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
-  box-shadow: 0 8px 25px rgba(46, 125, 50, 0.25);
+  box-shadow: 0 8px 25px rgba(2, 195, 154, 0.25);
   transition: all 0.3s ease;
 }
 
 .benefit-icon:hover .icon-circle {
-  box-shadow: 0 12px 35px rgba(46, 125, 50, 0.35);
+  box-shadow: 0 12px 35px rgba(2, 195, 154, 0.35);
   transform: scale(1.05);
 }
 
@@ -436,7 +436,7 @@ body {
 }
 
 .product-button {
-  background: #3498db;
+  background: #02c39a;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -447,7 +447,7 @@ body {
 }
 
 .product-button:hover {
-  background: #2980b9;
+  background: #019f7a;
 }
 
 .product-info {
@@ -463,7 +463,7 @@ body {
 .product-price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 0.5rem;
 }
 
@@ -512,7 +512,7 @@ body {
 
 .stat h3 {
   font-size: 2.5rem;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 0.5rem;
 }
 
@@ -549,7 +549,7 @@ body {
 
 .contact-item i {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #02c39a;
   width: 30px;
 }
 
@@ -585,11 +585,11 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: #02c39a;
 }
 
 .submit-button {
-  background: #3498db;
+  background: #02c39a;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -602,7 +602,7 @@ body {
 }
 
 .submit-button:hover {
-  background: #2980b9;
+  background: #019f7a;
 }
 
 /* Footer */
@@ -642,7 +642,7 @@ body {
 }
 
 .social-links a:hover {
-  color: #3498db;
+  color: #02c39a;
 }
 
 .footer-section ul {
@@ -660,7 +660,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-  color: #3498db;
+  color: #02c39a;
 }
 
 .footer-bottom {
@@ -668,6 +668,38 @@ body {
   padding-top: 2rem;
   border-top: 1px solid #34495e;
   color: #bdc3c7;
+}
+
+/* Contact social links (large icons) */
+.contact-social .social-large {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+
+.contact-social .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #2e7d32;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(2, 195, 154, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-social .social-link:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(2, 195, 154, 0.28);
+}
+
+.contact-social .social-link i {
+  font-size: 2rem;
 }
 
 /* Responsive Design */
@@ -724,6 +756,21 @@ body {
   .dropdown:hover .dropdown-menu,
   .dropdown.active .dropdown-menu {
     max-height: 200px;
+  }
+
+  /* Contact social responsive tweaks */
+  .contact-social .social-large {
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .contact-social .social-link {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-social .social-link i {
+    font-size: 1.5rem;
   }
 
   .dropdown-link {
@@ -852,12 +899,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3498db;
+  background: #02c39a;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2980b9;
+  background: #019f7a;
 }
 
 /* About Us Page Styles */
@@ -944,7 +991,7 @@ html {
 
 .card-icon {
   font-size: 3rem;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 1.5rem;
 }
 
@@ -988,7 +1035,7 @@ html {
 
 .value-icon {
   font-size: 2.5rem;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 1rem;
 }
 
@@ -1075,7 +1122,7 @@ html {
 }
 
 .member-role {
-  color: #3498db;
+  color: #02c39a;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -1099,7 +1146,7 @@ html {
 }
 
 .member-social a:hover {
-  color: #3498db;
+  color: #02c39a;
 }
 
 .company-stats {
@@ -1121,7 +1168,7 @@ html {
 .stat-number {
   font-size: 3rem;
   font-weight: bold;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 0.5rem;
 }
 
@@ -1132,7 +1179,7 @@ html {
 
 .cta-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  background: linear-gradient(135deg, #02c39a 0%, #019f7a 100%);
   color: white;
   text-align: center;
 }
@@ -1160,7 +1207,7 @@ html {
 
 .cta-button.primary {
   background: white;
-  color: #3498db;
+  color: #02c39a;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 50px;
@@ -1182,12 +1229,12 @@ html {
 .cta-button.primary:hover {
   background: #f8f9fa;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(2, 195, 154, 0.12);
 }
 
 .cta-button.secondary:hover {
   background: white;
-  color: #3498db;
+  color: #02c39a;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -1366,7 +1413,7 @@ html {
 
 .pillar-icon {
   font-size: 3rem;
-  color: #3498db;
+  color: #02c39a;
   margin-bottom: 1.5rem;
 }
 
@@ -1383,7 +1430,7 @@ html {
 
 .philosophy-cta {
   padding: 80px 0;
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  background: linear-gradient(135deg, #02c39a 0%, #019f7a 100%);
   color: white;
   text-align: center;
 }
@@ -1401,7 +1448,7 @@ html {
 
 .philosophy-cta .cta-button {
   background: white;
-  color: #3498db;
+  color: #02c39a;
   text-decoration: none;
   padding: 15px 40px;
   border-radius: 50px;
