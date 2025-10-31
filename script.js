@@ -234,3 +234,25 @@ document.querySelectorAll(".product-card").forEach((card) => {
     this.style.zIndex = "1";
   });
 });
+
+// Hide textual fallbacks when Font Awesome is available
+function fontAwesomeLoaded() {
+  const test = document.createElement("i");
+  test.className = "fab fa-facebook";
+  test.style.display = "none";
+  document.body.appendChild(test);
+  const fontFamily = window
+    .getComputedStyle(test)
+    .getPropertyValue("font-family");
+  document.body.removeChild(test);
+  // If font-family contains 'Font Awesome' or 'FontAwesome', assume it's loaded
+  return /Font ?Awesome|FontAwesome/i.test(fontFamily);
+}
+
+window.addEventListener("load", function () {
+  if (fontAwesomeLoaded()) {
+    document
+      .querySelectorAll(".social-letter")
+      .forEach((el) => (el.style.display = "none"));
+  }
+});

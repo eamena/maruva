@@ -34,14 +34,18 @@ maruva/
 ## 🎨 Customization
 
 ### Colors
+
 The website uses a blue color scheme. To change colors, update these CSS variables in `styles.css`:
-- Primary blue: `#3498db`
-- Dark blue: `#2980b9`
+
+- Primary brand green: `#02c39a`
+- Dark brand green: `#019f7a`
 - Dark text: `#2c3e50`
 - Light background: `#f8f9fa`
 
 ### Content
+
 Update the following in `index.html`:
+
 - Company name and logo
 - Product information and prices
 - Contact details
@@ -49,6 +53,7 @@ Update the following in `index.html`:
 - Social media links
 
 ### Images
+
 Add your product and brand images to the `images/` folder following the naming convention specified in `images/README.md`.
 
 ## 📱 Responsive Breakpoints
