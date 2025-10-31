@@ -723,13 +723,14 @@ body {
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(2, 195, 154, 0.08);
+  /* neutral black shadows instead of green-tinted shadows */
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.16), 0 8px 28px rgba(0, 0, 0, 0.08);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .social-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 48px rgba(2, 195, 154, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.22), 0 16px 40px rgba(0, 0, 0, 0.14);
 }
 
 .card-icon {
