@@ -479,10 +479,18 @@ body {
 }
 
 .about-content {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+
+/* Ensure feature cards inside the About section sit inline in one row on desktop */
+.about .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 
 .about-text p {
@@ -879,18 +887,26 @@ html {
   background: #f8f9fa;
 }
 
-.story-content {
-  display: grid;
+.about-content {
+  /* display: grid; */
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
 }
 
-.story-text p {
-  margin-bottom: 1.5rem;
-  color: #666;
-  line-height: 1.7;
-  font-size: 1.1rem;
+/* Ensure feature cards inside the About section sit inline in one row on desktop */
+.about .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Responsive adjustments: 2 columns on medium screens, 1 on mobile */
+@media (max-width: 1100px) {
+  .about .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .story-image img {
