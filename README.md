@@ -39,7 +39,7 @@ The website uses a blue color scheme. To change colors, update these CSS variabl
 
 - Primary brand green: `#02c39a`
 - Dark brand green: `#019f7a`
-- Dark text: `#2c3e50`
+- Dark text: `#3a2a52`
 - Light background: `#f8f9fa`
 
 ### Content
