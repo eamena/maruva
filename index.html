@@ -15,11 +15,32 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <!-- <img src="images/Logo.png" alt="Maruva Logo" class="logo"> -->
+          <img
+            src="images/maruva_logo_clean.png"
+            alt="Maruva Logo"
+            class="logo"
+          />
         </div>
         <div class="nav-menu" id="nav-menu">
           <a href="#home" class="nav-link">Inicio</a>
-          <a href="#products" class="nav-link">Products</a>
+          <div class="nav-item dropdown">
+            <a href="#products" class="nav-link dropdown-toggle">Productos</a>
+            <div class="dropdown-menu">
+              <a href="#skincare" class="dropdown-link"
+                >JABONES CORPORALES Y FACIALES</a
+              >
+
+              <a href="#haircare" class="dropdown-link">CUIDADO FACIAL</a>
+              <a href="#wellness" class="dropdown-link">CUIDADO CORPORAL</a>
+              <a href="#skincare" class="dropdown-link">CUIDADO CAPILAR</a>
+              <a href="#haircare" class="dropdown-link">MASCOTAS</a>
+              <a href="#wellness" class="dropdown-link">HOGAR</a>
+              <a href="#skincare" class="dropdown-link">KITS</a>
+              <!-- <a href="#haircare" class="dropdown-link">CUIDADO FACIAL</a>
+              <a href="#wellness" class="dropdown-link">CUIDADO CORPORAL</a> -->
+            </div>
+          </div>
+
           <a href="filosofia.html" class="nav-link">Filosofía</a>
           <a href="about-us.html" class="nav-link">Acerca de Nosotros</a>
           <a href="#contact" class="nav-link">Contact</a>
@@ -36,8 +57,12 @@
     <section id="home" class="hero">
       <div class="hero-container hero-centered">
         <div class="hero-content">
-          <!-- <h1 class="hero-title">Welcome to Maruva</h1> -->
-          <img src="images/Logo.png" alt="Maruva Logo" class="logo" />
+          <h1 class="hero-title">Bienvenido a Maruva</h1>
+          <!-- <img
+            src="images/maruva_logo_clean.png"
+            alt="Maruva Logo"
+            class="logo"
+          /> -->
           <p class="hero-subtitle">
             Bienvenido a un rincón donde la belleza y la sostenibilidad se
             encuentran. Aquí encontrarás productos de cuidado personal y
@@ -45,19 +70,68 @@
             Porque cuidar de ti también puede ser una forma de cuidar el mundo.
             Gracias por sumarte a este estilo de vida.
           </p>
-          <button class="cta-button">Explora Nuestros Productos</button>
+          <!-- <button class="cta-button">Explora Nuestros Productos</button> -->
         </div>
-        <!-- <div class="hero-image">
-                <img src="images/hero-image.jpg" alt="Featured Products" />
-            </div> -->
       </div>
     </section>
 
     <!-- Features Section -->
     <section class="features">
       <div class="container">
-        <h2 class="section-title">Why Choose Maruva?</h2>
-        <div class="features-grid">
+        <h2 class="section-title">¿POR QUÉ ELEGIR COSMÉTICA NATURAL?</h2>
+        <p>
+          Hacer de lo natural un estilo de vida, no es vanidad. Es hacer
+          consciencia de que todo lo que le ponemos a nuestro cuerpo nos
+          beneficia o perjudica dependiendo de los ingredientes que contenga.
+        </p>
+
+        <ul class="benefits-list">
+          <li>
+            Ingredientes más seguros para tu piel (ingredientes naturales)
+          </li>
+          <li>
+            Mayor compatibilidad con todo tipo de piel (fórmulas suaves y
+            equilibradas)
+          </li>
+          <li>Beneficios reales</li>
+          <li>Menor impacto ambiental</li>
+          <li>Respeto por los animales</li>
+        </ul>
+
+        <div class="benefits-icons">
+          <div class="benefit-icon">
+            <div class="icon-circle">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p>Ingredientes Naturales</p>
+          </div>
+          <div class="benefit-icon">
+            <div class="icon-circle">
+              <i class="fas fa-hand"></i>
+            </div>
+            <p>Hecho a Mano</p>
+          </div>
+          <div class="benefit-icon">
+            <div class="icon-circle">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <p>100% Vegano</p>
+          </div>
+          <div class="benefit-icon">
+            <div class="icon-circle">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <p>Biodegradable</p>
+          </div>
+          <div class="benefit-icon">
+            <div class="icon-circle">
+              <i class="fas fa-paw"></i>
+            </div>
+            <p>Libre de Crueldad Animal</p>
+          </div>
+        </div>
+
+        <!-- <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-gem"></i>
@@ -88,14 +162,14 @@
               or concerns about your purchase.
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- Products Preview Section -->
     <section id="products" class="products-preview">
       <div class="container">
-        <h2 class="section-title">Featured Products</h2>
+        <h2 class="section-title">Productos Favoritos</h2>
         <div class="products-grid">
           <div class="product-card">
             <div class="product-image">
