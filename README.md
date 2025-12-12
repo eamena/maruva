@@ -39,20 +39,26 @@ maruva/
 ## 🎨 Customization
 
 ### Colors
+
 The website uses a blue color scheme. To change colors, update these CSS variables in `styles.css`:
+
 - Primary blue: `#3498db`
 - Dark blue: `#2980b9`
 - Dark text: `#2c3e50`
 - Light background: `#f8f9fa`
 
 ### Content
+
 Update content across the three main pages:
+
 - **index.html**: Homepage with hero, products, and contact sections
 - **filosofia.html**: Philosophy page with brand values and mission
 - **about-us.html**: Personal story of Liz, the founder
 
 ### Images
+
 Add your brand and personal images to the `images/` folder:
+
 - **Logo.png** - Company logo (used in navigation and hero)
 - **sobre_mi.jpg** - Background image for About Us hero section
 - **filosofia-hero.jpg** - Background image for Philosophy hero section
@@ -79,6 +85,7 @@ See `images/README.md` for detailed specifications.
 ## ✨ Key Sections
 
 ### Homepage (index.html)
+
 1. **Navigation** - Fixed header with smooth scroll links
 2. **Hero Section** - Logo and Spanish welcome message
 3. **Features** - Key selling points with icons
@@ -88,12 +95,14 @@ See `images/README.md` for detailed specifications.
 7. **Footer** - Social media links and quick navigation
 
 ### Philosophy Page (filosofia.html)
+
 1. **Hero Section** - Full-width background image with overlay
 2. **Philosophy Content** - Detailed brand values and mission
 3. **Philosophy Pillars** - Four core values with icons
 4. **Call to Action** - Link to products
 
 ### About Us Page (about-us.html)
+
 1. **Hero Section** - Background image with page title
 2. **Company Values** - Wellness and sustainability focus
 3. **Personal Story** - Liz's journey and inspiration
@@ -126,12 +135,14 @@ See `images/README.md` for detailed specifications.
 ## 🖼️ Image Requirements
 
 ### Required Images:
+
 - **Logo.png** - Company logo (transparent background recommended)
 - **sobre_mi.jpg** - Personal photo of Liz (1920x1080px minimum)
 - **filosofia-hero.jpg** - Philosophy hero background (1920x1080px minimum)
 - **product-1.jpg, product-2.jpg, product-3.jpg** - Product photos (600x400px recommended)
 
 ### Optional Images:
+
 - **hero-image.jpg** - Homepage hero background
 - **about-image.jpg** - About section image
 
@@ -146,6 +157,7 @@ See `images/README.md` for detailed specifications.
 ## 🌱 Brand Focus
 
 Maruva specializes in:
+
 - **Sustainable Beauty Products** - Natural, eco-friendly personal care
 - **Wellness Philosophy** - Holistic approach to health and beauty
 - **Environmental Responsibility** - Plastic-free, recyclable packaging
