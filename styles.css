@@ -1238,11 +1238,11 @@ html {
   text-align: justify;
 }
 
-.liz-text p:first-child {
+/* .liz-text p:first-child {
   font-size: 1.2rem;
   font-weight: 500;
   color: #3a2a52;
-}
+} */
 
 .team-member:hover {
   transform: translateY(-10px);
