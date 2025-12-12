@@ -1537,11 +1537,11 @@ html {
   text-align: justify;
 }
 
-.philosophy-text p:first-child {
+/* .philosophy-text p:first-child {
   font-size: 1.2rem;
   font-weight: 500;
   color: #3a2a52;
-}
+} */
 
 .philosophy-pillars {
   display: grid;
