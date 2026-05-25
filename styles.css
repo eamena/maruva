@@ -136,10 +136,8 @@ body {
 }
 
 .dropdown-toggle::after {
-  content: " ▾";
-  font-size: 10px;
-  transition: transform 0.3s ease;
-  display: inline-block;
+  content: "";
+  display: none;
 }
 
 .dropdown:hover .dropdown-toggle::after {
