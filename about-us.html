@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Maruva</title>
+    <title>Acerca de Nosotros - Maruva</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
   </head>
@@ -15,14 +15,71 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <!-- <img src="images/Logo.png" alt="Maruva Logo" class="logo"> -->
+          <a href="index.html">
+            <img
+              src="images/maruva_logo_clean.png"
+              alt="Maruva Logo"
+              class="logo"
+            />
+          </a>
         </div>
         <div class="nav-menu" id="nav-menu">
           <a href="index.html" class="nav-link">Inicio</a>
-          <a href="index.html#products" class="nav-link">Products</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Productos</a>
+            <div class="dropdown-menu">
+              <a href="jabones.html" class="dropdown-link">JABONES CORPORALES Y FACIALES</a>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-facial.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO FACIAL <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-facial.html#balsamoslabiales" class="dropdown-link">Bálsamo labial</a>
+                  <a href="cuidado-facial.html#sueros" class="dropdown-link">Suero facial</a>
+                  <a href="cuidado-facial.html#mascarillas" class="dropdown-link">Mascarilla facial</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-corporal.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO CORPORAL <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-corporal.html#exfoliantes" class="dropdown-link">Cubos exfoliantes</a>
+                  <a href="cuidado-corporal.html#desodorantes" class="dropdown-link">Desodorante sólido</a>
+                  <a href="cuidado-corporal.html#refils" class="dropdown-link">Refil de desodorante</a>
+                  <a href="cuidado-corporal.html#cremas" class="dropdown-link">Crema corporal sólida</a>
+                  <a href="cuidado-corporal.html#bloqueador" class="dropdown-link">Bloqueador solar FPS 50</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-capilar.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO CAPILAR <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-capilar.html#mascarillas" class="dropdown-link">Mascarilla capilar</a>
+                  <a href="cuidado-capilar.html#acondicionadores" class="dropdown-link">Acondicionador</a>
+                  <a href="cuidado-capilar.html#shampoos" class="dropdown-link">Shampoo</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="mascotas.html" class="dropdown-link dropdown-submenu-toggle">MASCOTAS <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="mascotas.html" class="dropdown-link">Jabón</a>
+                  <a href="mascotas.html" class="dropdown-link">Cera protectora</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="hogar.html" class="dropdown-link dropdown-submenu-toggle">HOGAR <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="hogar.html#lavatrastes" class="dropdown-link">Bloque lavatraste</a>
+                  <a href="hogar.html#limpiador" class="dropdown-link">Limpiador multiusos</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="kits.html" class="dropdown-link dropdown-submenu-toggle">KITS <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="kits.html" class="dropdown-link">Kit peludos</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="filosofia.html" class="nav-link">Filosofía</a>
           <a href="about-us.html" class="nav-link active">Acerca de Nosotros</a>
-          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="index.html#contact" class="nav-link">Contacto</a>
         </div>
         <div class="nav-toggle" id="nav-toggle">
           <span class="bar"></span>
@@ -36,9 +93,9 @@
     <section class="about-hero">
       <div class="container">
         <div class="about-hero-content">
-          <h1 class="page-title">About Maruva</h1>
+          <h1 class="page-title">Acerca de Maruva</h1>
           <p class="page-subtitle">
-            Crafting excellence through premium products and exceptional service
+            Una empresa mexicana de cosmética sólida natural
           </p>
         </div>
       </div>
@@ -49,33 +106,32 @@
       <div class="container">
         <div class="story-content">
           <div class="story-text">
-            <h2 class="section-title">Our Story</h2>
+            <h2 class="section-title">Nuestra Historia</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Maruva es un sueño que nació del cuidado y respeto al planeta, a
+              los animales, nuestro cuerpo, nuestra piel. Todos los productos
+              que vendemos están elaborados con ingredientes naturales, veganos,
+              biodegradables, libres de crueldad animal, sin envases de
+              plástico, hechos a mano y libres de tóxicos.
             </p>
-
             <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-              unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Iniciamos pensando en poner nuestro granito de arena y aportar a
+              la sociedad, a nuestro país, al planeta. Comenzamos haciendo
+              jabones artesanales pensando en que es uno de los productos más
+              usados en el día a día. Pero al examinar todos los cambios
+              personales nos dimos cuenta que todo va más allá, así que
+              decidimos vender productos de cuidado personal y limpieza del
+              hogar que realmente traigan bienestar.
             </p>
-
             <p>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur, adipisci velit.
+              Actualmente contamos con más de 20 productos en catálogo: jabones
+              corporales y faciales, bálsamos de labios, cremas faciales, sueros
+              faciales, mascarillas capilares, shampoo, acondicionador, crema
+              corporal, desodorantes, bloqueadores solares, productos para
+              mascotas y la limpieza del hogar, entre otros.
+              <strong>Maruva</strong> significa <em>"Flores"</em> en el lenguaje
+              Shona.
             </p>
-          </div>
-          <div class="story-image">
-            <img src="images/story-image.jpg" alt="Our Story" />
           </div>
         </div>
       </div>
@@ -105,7 +161,7 @@
             </div>
             <h3>Nuestra Visión</h3>
             <p>
-              Inspirar a más personas a elegir una forma de vida mas amable con
+              Inspirar a más personas a elegir una forma de vida más amable con
               el planeta, empezando por lo que usamos en nuestra piel y en el
               hogar. Creemos en una cosmética sólida, natural y honesta, que
               cuide de ti y del planeta al mismo tiempo. Soñamos con un mundo
@@ -117,235 +173,74 @@
       </div>
     </section>
 
-    <!-- Values Section -->
-    <section class="values-section">
-      <div class="container">
-        <h2 class="section-title">Our Values</h2>
-        <div class="values-grid">
-          <div class="value-item">
-            <div class="value-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>Excellence</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="value-item">
-            <div class="value-icon">
-              <i class="fas fa-handshake"></i>
-            </div>
-            <h4>Integrity</h4>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-          <div class="value-item">
-            <div class="value-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h4>Innovation</h4>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div class="value-item">
-            <div class="value-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <h4>Community</h4>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Section -->
+    <!-- About Me Section -->
     <section class="team-section">
       <div class="container">
-        <h2 class="section-title">Sobre mi</h2>
+        <h2 class="section-title">Sobre mí</h2>
         <div class="content-wrapper">
           <div class="liz-text">
             <p>
               ¡Hola! Soy Liz, tengo 33 años, soy Acapulqueña, soy enfermera de
               profesión y soy la persona que está detrás de todo lo que ves en
-              Maruva, en estos renglones quiero platicarte un poco más sobre mí
-              y la razones que cambiaron mi manera de vivir y que fueron parte
+              Maruva. En estos renglones quiero platicarte un poco más sobre mí
+              y las razones que cambiaron mi manera de vivir y que fueron parte
               importante para crear este espacio.
             </p>
             <p>
               Hasta donde recuerdo siempre he tenido un gran amor por los
-              animales, la naturaleza, con el paso de los años el sentimiento
+              animales y la naturaleza. Con el paso de los años el sentimiento
               creció más y con ello se vino un cambio de mentalidad que cada vez
               se fue haciendo más grande.
             </p>
             <p>
-              Por el 2017, decidí convertirme en vegetariana, nunca me gusto
-              mucho la carne, entonces ha sido un proceso bastante sencillo. Lo
-              hice por amor a los animales y por llevar un régimen más
-              saludable. Mi convicción de cuidar el medio ambiente comenzó a
-              crecer y fui haciendo pequeños cambios en mi vida, me fui haciendo
-              más consciente de mis elecciones de compra, empecé a disminuir el
-              consumo de plástico innecesario, comencé a comprar a granel todo
-              lo que podía, comencé a hacerme responsable de mis residuos, los
-              empecé a separar y llevar a reciclar, entre otros.
+              Por el 2017, decidí convertirme en vegetariana. Lo hice por amor a
+              los animales y por llevar un régimen más saludable. Mi convicción
+              de cuidar el medio ambiente comenzó a crecer y fui haciendo
+              pequeños cambios en mi vida: me hice más consciente de mis
+              elecciones de compra, empecé a disminuir el consumo de plástico
+              innecesario, comencé a comprar a granel todo lo que podía, me hice
+              responsable de mis residuos — los empecé a separar y llevar a
+              reciclar, entre otros.
             </p>
-
             <p>
               Soy una mujer diagnosticada con endometriosis y la enfermedad me
               ha ayudado a hacerme más consciente y cuidar las cosas que como y
               que utilizo en mi vida diaria. La endometriosis es una enfermedad
-              crónica, multisistémica, que depende de estrógenos, y algo que he
-              aprendido es que muchas de las cosas con las que tenemos contacto
-              son fabricados con muchos tóxicos que repercuten en nuestro
-              sistema endocrino que es el encargado de regular las hormonas en
-              el cuerpo. (Por eso prefiero lo natural en vez de los industrial).
+              crónica, multisistémica, que depende de estrógenos. He aprendido
+              que muchas de las cosas con las que tenemos contacto son
+              fabricadas con tóxicos que repercuten en nuestro sistema
+              endocrino, el encargado de regular las hormonas en el cuerpo. Por
+              eso prefiero lo natural en vez de lo industrial.
             </p>
             <p>
               Un día estaba retomando mi sueño de tener un negocio propio y
-              pensé en relacionar todo con mi nueva manera de vida, comencé a
-              crear jabones artesanales, todo era nuevo para mí, así que tomé
-              cursos de diferentes cosas ya que un negocio es más que solo hacer
-              el producto y ya. Así fue como inició Maruva, un sueño de tener un
-              negocio propio mezclado con el amor por el planeta, por los
-              animales, por cuidar más de mi salud, de mi cuerpo, querer
-              inspirar a las personas más cercanas a mí, a llevar un estilo de
-              vida más amable y respetuoso con el hogar al que llamamos planeta.
-              En estos años mi manera de pensar ha cambiado, al igual que mi
-              manera de vivir, trato de hacer lo más que puedo para que mi vida
-              deje las menos huellas posibles en esta maravillosa tierra en la
-              que me tocó vivir, trato de animar, concientizar, inspirar a todos
-              los que están a mi alrededor de que, si se puede llevar una vida
-              sostenible, amable con el medio ambiente y con un verdadero
-              beneficio para nuestra salud.
+              pensé en relacionar todo con mi nueva manera de vida. Comencé a
+              crear jabones artesanales, tomé cursos de diferentes temas porque
+              un negocio es más que solo hacer el producto. Así fue como inició
+              Maruva: un sueño de tener un negocio propio mezclado con el amor
+              por el planeta, por los animales, por cuidar más de mi salud,
+              queriendo inspirar a las personas más cercanas a mí a llevar un
+              estilo de vida más amable y respetuoso con el hogar al que
+              llamamos planeta.
             </p>
-
             <p>
               Pasamos de vender solamente jabones artesanales, a vender toda una
               línea de productos de cuidado personal naturales, para mascotas y
-              para el hogar, porque el cambio va más allá de un solo producto,
-              el cambio empieza en el corazón y la mente, pero hasta que los
+              para el hogar, porque el cambio va más allá de un solo producto.
+              El cambio empieza en el corazón y la mente, pero hasta que lo
               haces real es cuando empiezas a sentir la transformación, una
               transformación que te llena el corazón.
             </p>
-
             <p>
               Quiero agradecerte por ser parte de este cambio de vida, de este
               sueño de poder vivir una vida más ligera y sostenible.
             </p>
             <p>
-              No te vas a arrepentir, tu cuerpo, el planeta, los animales, cada
+              No te vas a arrepentir. Tu cuerpo, el planeta, los animales, cada
               ser vivo te agradece infinitamente por animarte a dar este paso y
               vivir una vida en amor por ellos y por ti.
             </p>
-
             <p>Con amor, Liz.</p>
-          </div>
-        </div>
-        <!-- <div class="team-grid">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="images/team-member-1.jpg" alt="Team Member 1" />
-            </div>
-            <div class="member-info">
-              <h4>John Doe</h4>
-              <p class="member-role">Chief Executive Officer</p>
-              <p class="member-bio">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-image">
-              <img src="images/team-member-2.jpg" alt="Team Member 2" />
-            </div>
-            <div class="member-info">
-              <h4>Jane Smith</h4>
-              <p class="member-role">Chief Technology Officer</p>
-              <p class="member-bio">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="team-member">
-            <div class="member-image">
-              <img src="images/team-member-3.jpg" alt="Team Member 3" />
-            </div>
-            <div class="member-info">
-              <h4>Mike Johnson</h4>
-              <p class="member-role">Head of Design</p>
-              <p class="member-bio">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-              </p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <!-- Company Stats Section -->
-    <section class="company-stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number">1000+</div>
-            <div class="stat-label">Happy Customers</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">50+</div>
-            <div class="stat-label">Premium Products</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">5</div>
-            <div class="stat-label">Years Experience</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">25+</div>
-            <div class="stat-label">Countries Served</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Experience Excellence?</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div class="cta-buttons">
-            <a href="index.html#products" class="cta-button primary"
-              >View Products</a
-            >
-            <a href="index.html#contact" class="cta-button secondary"
-              >Contact Us</a
-            >
           </div>
         </div>
       </div>
@@ -357,35 +252,40 @@
         <div class="footer-content">
           <div class="footer-section">
             <h3>Maruva</h3>
-            <p>Premium products for modern living.</p>
+            <p>Enamorando tu piel.</p>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100034228426046"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/maruvanatural/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/5511460393"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
           </div>
           <div class="footer-section">
-            <h4>Quick Links</h4>
+            <h4>Explora</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#products">Products</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html#products">Productos</a></li>
+              <li><a href="filosofia.html">Filosofía</a></li>
+              <li><a href="about-us.html">Acerca de Nosotros</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
             </ul>
           </div>
           <div class="footer-section">
-            <h4>Customer Service</h4>
+            <h4>Servicio Al Cliente</h4>
             <ul>
-              <li><a href="#">Shipping Info</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Support</a></li>
+              <li><a href="#">Información de Envío</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2025 Maruva. All rights reserved.</p>
+          <p>&copy; 2025 Maruva. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuidado Capilar - Maruva</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img
+              src="images/maruva_logo_clean.png"
+              alt="Maruva Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Productos</a>
+            <div class="dropdown-menu">
+              <a href="jabones.html" class="dropdown-link"
+                >JABONES CORPORALES Y FACIALES</a
+              >
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-facial.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO FACIAL <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-facial.html#balsamoslabiales"
+                    class="dropdown-link"
+                    >Bálsamo labial</a
+                  >
+                  <a href="cuidado-facial.html#sueros" class="dropdown-link"
+                    >Suero facial</a
+                  >
+                  <a
+                    href="cuidado-facial.html#mascarillas"
+                    class="dropdown-link"
+                    >Mascarilla facial</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-corporal.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO CORPORAL <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-corporal.html#exfoliantes"
+                    class="dropdown-link"
+                    >Cubos exfoliantes</a
+                  >
+                  <a
+                    href="cuidado-corporal.html#desodorantes"
+                    class="dropdown-link"
+                    >Desodorante sólido</a
+                  >
+                  <a href="cuidado-corporal.html#refils" class="dropdown-link"
+                    >Refil de desodorante</a
+                  >
+                  <a href="cuidado-corporal.html#cremas" class="dropdown-link"
+                    >Crema corporal sólida</a
+                  >
+                  <a
+                    href="cuidado-corporal.html#bloqueador"
+                    class="dropdown-link"
+                    >Bloqueador solar FPS 50</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-capilar.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO CAPILAR <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-capilar.html#mascarillas"
+                    class="dropdown-link"
+                    >Mascarilla capilar</a
+                  >
+                  <a
+                    href="cuidado-capilar.html#acondicionadores"
+                    class="dropdown-link"
+                    >Acondicionador</a
+                  >
+                  <a href="cuidado-capilar.html#shampoos" class="dropdown-link"
+                    >Shampoo</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="mascotas.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >MASCOTAS <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="mascotas.html" class="dropdown-link">Jabón</a>
+                  <a href="mascotas.html" class="dropdown-link"
+                    >Cera protectora</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="hogar.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >HOGAR <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="hogar.html#lavatrastes" class="dropdown-link"
+                    >Bloque lavatraste</a
+                  >
+                  <a href="hogar.html#limpiador" class="dropdown-link"
+                    >Limpiador multiusos</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="kits.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >KITS <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="kits.html" class="dropdown-link">Kit peludos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="filosofia.html" class="nav-link">Filosofía</a>
+          <a href="about-us.html" class="nav-link">Acerca de Nosotros</a>
+          <a href="index.html#contact" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="category-hero">
+      <div class="container">
+        <h1>Cuidado Capilar</h1>
+        <p>
+          Mascarillas, shampoos y acondicionadores sólidos con ingredientes
+          naturales para un cabello sano y brillante
+        </p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="category-products">
+      <div class="container">
+        <!-- Mascarillas Capilares -->
+        <div class="category-section" id="mascarillas">
+          <h2 class="category-section-title">Mascarillas Capilares</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="mascap-aguacate"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Mascarilla Capilar de Aguacate"
+              data-price="$164.00"
+              data-presentation="25 gr"
+              data-description="El aguacate puede ser tu mejor aliado para lucir un cabello nutrido, sano y hermoso, gracias a sus múltiples ácidos grasos esenciales, aceites, minerales y vitaminas capaces de nutrir las fibras capilares desde adentro, regenerando y fortaleciéndolas. La mascarilla deja el cabello hidratado, nutrido, suave y brillante."
+              data-image="images/Mascarilla capilar de aguacate.jpg"
+              data-usage="Hierve 250ml de agua. Sumerge la mascarilla en agua caliente y agita para disolver. Deja enfriar hasta consistencia cremosa. Aplica la mascarilla y deja actuar 20 min. Enjuaga. Guarda el resto en el refrigerador."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Mascarilla capilar de aguacate.jpg"
+                  alt="Mascarilla Capilar de Aguacate"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Mascarilla Capilar de Aguacate</h3>
+                <p class="product-price">$164.00</p>
+              </div>
+            </div>
+
+            <div
+              id="mascap-platano-miel"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Mascarilla Capilar de Plátano y Miel"
+              data-price="$164.00"
+              data-presentation="25 gr"
+              data-description="Descubre la deliciosa mascarilla de plátano, miel y avena: el superpoder ultra regenerador para nutrir profundamente el cabello seco. Enriquecida con pulpa de plátano y avena, superfood perfectos para el cabello. Fórmula llena de nutrientes e hidratación que deja el cabello suave, intensamente nutrido y sin efecto graso. El plátano, con vitaminas A, C, E y minerales como potasio y zinc, se convirtió en ingrediente clave para un cabello regenerado y fuerte."
+              data-image="images/Mascarilla capilar de plátano-miel.jpg"
+              data-usage="Hierve 250ml de agua. Sumerge la mascarilla en agua caliente y agita para disolver. Deja enfriar hasta consistencia cremosa. Aplica la mascarilla y deja actuar 20 min. Enjuaga. Guarda el resto en el refrigerador."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Mascarilla capilar de plátano-miel.jpg"
+                  alt="Mascarilla Capilar de Plátano y Miel"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Mascarilla Capilar de Plátano y Miel</h3>
+                <p class="product-price">$164.00</p>
+              </div>
+            </div>
+
+            <div
+              id="mascap-manzana-nuez"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Mascarilla Capilar de Manzana y Nuez"
+              data-price="$164.00"
+              data-presentation="25 gr"
+              data-description="Barra repleta de vitaminas y antioxidantes con gran potencial hidratante y limpiador. Además, la mascarilla tiene un ingrediente sorpresa: la nuez de macadamia, esta pequeña fruta llena de antioxidantes protege la salud del cabello contra los agentes externos que dañan las fibras capilares. Los antioxidantes combaten los radicales libres que causan el envejecimiento prematuro del cabello como los rayos UV o el ambiente contaminado. Deja el cabello brillante, suave, nutrido, hidratado y protegido."
+              data-image="images/Mascarilla capilar de manzana-nuez.jpg"
+              data-usage="Hierve 250ml de agua. Sumerge la mascarilla en agua caliente y agita para disolver. Deja enfriar hasta consistencia cremosa. Aplica la mascarilla y deja actuar 20 min. Enjuaga. Guarda el resto en el refrigerador."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Mascarilla capilar de manzana-nuez.jpg"
+                  alt="Mascarilla Capilar de Manzana y Nuez"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Mascarilla Capilar de Manzana y Nuez</h3>
+                <p class="product-price">$164.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shampoos Sólidos -->
+        <div class="category-section" id="shampoos">
+          <h2 class="category-section-title">Shampoos Sólidos</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="shampoo-sandia"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Shampoo Sólido de Sandía (Cabello Seco)"
+              data-price="$200.00"
+              data-presentation="~100 gr"
+              data-description="La hora del baño será un disfrute increíble gracias al delicioso aroma a sandía. La barra no solo huele increíble, tiene ingredientes estrella que nutren y revitalizan el cabello. El extracto de miel, la mantequilla de mango y el aceite de almendra son una bomba de hidratación y nutrición capilar. La arcilla roja limpia el cabello suavemente sin resecar, fortalece el cabello, estimula el crecimiento. Prepárate para lucir un cabello suave, brillante y saludable."
+              data-image="images/Shampoo sólido de sandía.jpeg"
+              data-usage="Moja el cabello. Frota el shampoo sólido directamente sobre el cuero cabelludo. Masajea y extiende el producto por todo el cabello. Enjuaga bien. Consejo: guárdalo seco, fuera del contacto directo del agua en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Shampoo sólido de sandía.jpeg"
+                  alt="Shampoo Sólido de Sandía (Cabello Seco)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Shampoo Sólido de Sandía (Cabello Seco)</h3>
+                <p class="product-price">$200.00</p>
+              </div>
+            </div>
+
+            <div
+              id="shampoo-mango"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Shampoo Sólido de Mango (Cabello Normal)"
+              data-price="$200.00"
+              data-presentation="~100 gr"
+              data-description="Formulado para quienes buscan mantener un cabello sano, fuerte y nutrido. El shampoo de mango ofrece una combinación de ingredientes que mantiene el cabello saludable y equilibrado. El aceite de linaza nutre, hidrata y da brillo. El extracto de cola de caballo y el polvo de cúrcuma ayudan al crecimiento y a reducir la caída. La arcilla bentonita elimina impurezas, reduce el sebo y combate los hongos causantes de la caspa."
+              data-image="images/Shampoo sólido de mango.jpeg"
+              data-usage="Moja el cabello. Frota el shampoo sólido directamente sobre el cuero cabelludo. Masajea y extiende el producto por todo el cabello. Enjuaga bien. Consejo: guárdalo seco, fuera del contacto directo del agua en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Shampoo sólido de mango.jpeg"
+                  alt="Shampoo Sólido de Mango (Cabello Normal)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Shampoo Sólido de Mango (Cabello Normal)</h3>
+                <p class="product-price">$200.00</p>
+              </div>
+            </div>
+
+            <div
+              id="shampoo-carbon"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Shampoo Sólido de Carbón Activado (Cabello Graso)"
+              data-price="$200.00"
+              data-presentation="~100 gr"
+              data-description="El mejor aliado para el cabello graso. El carbón activado combinado con otros ingredientes hace maravillas. La combinación de carbón activado, extractos de romero, aloe vera, aceite de jojoba, aceite esencial de naranja y arcilla verde son imprescindibles para tu cabello: limpian en profundidad, reducen el exceso de sebo, combaten la caspa, hidratan, fortalecen el tallo capilar, reducen la caída y estimulan el crecimiento."
+              data-image="images/Shampoo sólido de carbón activado.jpeg"
+              data-usage="Moja el cabello. Frota el shampoo sólido directamente sobre el cuero cabelludo. Masajea y extiende el producto por todo el cabello. Enjuaga bien. Consejo: guárdalo seco, fuera del contacto directo del agua en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Shampoo sólido de carbón activado.jpeg"
+                  alt="Shampoo Sólido de Carbón Activado (Cabello Graso)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Shampoo Sólido de Carbón Activado (Cabello Graso)</h3>
+                <p class="product-price">$200.00</p>
+              </div>
+            </div>
+
+            <div
+              id="shampoo-romero"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Shampoo Sólido de Romero (Anticaída)"
+              data-price="$200.00"
+              data-presentation="~100 gr"
+              data-description="La caída del cabello es un problema que requiere una solución eficaz y natural. Por eso elaboramos esta barra concentrada con ingredientes que revitalizan el cabello, lo fortalecen para reducir la caída y estimulan el crecimiento. El romero, potente estimulador capilar, fortalece la raíz, combate la caída y ayuda al crecimiento mejorando la circulación sanguínea. El aceite de ricino nutre e hidrata el cabello y previene la caída. El extracto de chili refuerza el crecimiento y da brillo."
+              data-image="images/Shampoo sólido de romero.jpeg"
+              data-usage="Moja el cabello. Frota el shampoo sólido directamente sobre el cuero cabelludo. Masajea y extiende el producto por todo el cabello. Enjuaga bien. Consejo: guárdalo seco, fuera del contacto directo del agua en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Shampoo sólido de romero.jpeg"
+                  alt="Shampoo Sólido de Romero (Anticaída)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Shampoo Sólido de Romero (Anticaída)</h3>
+                <p class="product-price">$200.00</p>
+              </div>
+            </div>
+
+            <div
+              id="shampoo-moras"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Shampoo Sólido de Moras (Cabello Rizado)"
+              data-price="$200.00"
+              data-presentation="~100 gr"
+              data-description="Esta barra morada te dará los rizos de tus sueños, hidratados y definidos. Con una combinación de ingredientes que aportan nutrición, hidratación y humectación, todo lo que tus rizos necesitan para lucir espectaculares. La mantequilla de karité y el aceite de aguacate nutren e hidratan el cabello, aportan suavidad y brillo. El extracto de aloe vera y la proteína de trigo fortalecen el cabello y mejoran su elasticidad. La avena deja los rizos suaves, sedosos y brillantes."
+              data-image="images/Shampoo solido de moras.jpeg"
+              data-usage="Moja el cabello. Frota el shampoo sólido directamente sobre el cuero cabelludo. Masajea y extiende el producto por todo el cabello. Enjuaga bien. Consejo: guárdalo seco, fuera del contacto directo del agua en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Shampoo solido de moras.jpeg"
+                  alt="Shampoo Sólido de Moras (Cabello Rizado)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Shampoo Sólido de Moras (Cabello Rizado)</h3>
+                <p class="product-price">$200.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acondicionadores Sólidos -->
+        <div class="category-section" id="acondicionadores">
+          <h2 class="category-section-title">Acondicionadores Sólidos</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="acon-mango"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Acondicionador Sólido de Mango"
+              data-price="$180.00"
+              data-presentation="~65 gr"
+              data-description="El dulce aroma a mango acaricia tu cabello mientras lo nutre e hidrata con este delicioso acondicionador. El acondicionador sólido de mango no solo desenreda el cabello facilitando el peinado, también nutre e hidrata en profundidad para una apariencia radiante. Aporta brillo, suavidad, reduce las puntas abiertas y el frizz. La vitamina E, ingrediente estrella, restaura la humedad natural del cabello seco devolviéndole la vida. Poderoso antioxidante que neutraliza los radicales libres."
+              data-image="images/Acondicionador de mango.jpeg"
+              data-usage="Después del shampoo, desliza suavemente el acondicionador sobre el cabello húmedo de puntas a medios. Masajea para distribuir bien. Deja actuar unos minutos. Enjuaga bien. Consejo: guárdalo seco en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Acondicionador de mango.jpeg"
+                  alt="Acondicionador Sólido de Mango"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Acondicionador Sólido de Mango</h3>
+                <p class="product-price">$180.00</p>
+              </div>
+            </div>
+
+            <div
+              id="acon-sandia"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Acondicionador Sólido de Sandía"
+              data-price="$180.00"
+              data-presentation="~65 gr"
+              data-description="Inunda el baño con el exótico aroma a sandía mientras cuidas tu cabello con este acondicionador sólido. No solo desenreda el cabello facilitando el peinado, también nutre e hidrata en profundidad para una apariencia radiante. Aporta brillo, suavidad, reduce las puntas abiertas y el frizz. La vitamina E restaura la humedad natural del cabello devolviendo la vida a las fibras capilares. Poderoso antioxidante que neutraliza los radicales libres que debilitan el folículo."
+              data-image="images/Acondicionador de sandía.jpeg"
+              data-usage="Después del shampoo, desliza suavemente el acondicionador sobre el cabello húmedo de puntas a medios. Masajea para distribuir bien. Deja actuar unos minutos. Enjuaga bien. Consejo: guárdalo seco en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Acondicionador de sandía.jpeg"
+                  alt="Acondicionador Sólido de Sandía"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Acondicionador Sólido de Sandía</h3>
+                <p class="product-price">$180.00</p>
+              </div>
+            </div>
+
+            <div
+              id="acon-moras"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Acondicionador Sólido de Moras (Cabello Rizado)"
+              data-price="$180.00"
+              data-presentation="~65 gr"
+              data-description="Acondicionador sólido especialmente formulado para el cabello rizado. Enriquecido con ingredientes naturales como mantequilla de karité, cacao, extracto de aloe vera, aceite de linaza y proteína de trigo. No solo desenreda el cabello rizado facilitando el peinado, también nutre e hidrata en profundidad para unos rizos radiantes. Aporta brillo, suavidad, reduce las puntas abiertas y el frizz. Eleva tu rutina de cuidado del cabello rizado con una fórmula innovadora que transforma la manera en que cuidas tus rizos."
+              data-image="images/Acondicionador de moras.jpeg"
+              data-usage="Después del shampoo, desliza suavemente el acondicionador sobre el cabello húmedo de puntas a medios. Masajea para distribuir bien. Deja actuar unos minutos. Enjuaga bien. Consejo: guárdalo seco en una jabonera con escurridor."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Acondicionador de moras.jpeg"
+                  alt="Acondicionador Sólido de Moras (Cabello Rizado)"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Acondicionador Sólido de Moras (Cabello Rizado)</h3>
+                <p class="product-price">$180.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Maruva</h3>
+            <p>Enamorando tu piel.</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100034228426046"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/maruvanatural/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/5511460393"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Explora</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="jabones.html">Productos</a></li>
+              <li><a href="filosofia.html">Filosofía</a></li>
+              <li><a href="about-us.html">Acerca de Nosotros</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Servicio Al Cliente</h4>
+            <ul>
+              <li><a href="#">Información de Envío</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maruva. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div
+      class="modal-overlay"
+      id="productModal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
+        <div class="modal-image-col">
+          <img id="modalImage" src="" alt="" />
+          <div id="modalNoImage" class="modal-no-image" style="display: none">
+            <i class="fas fa-leaf"></i>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 class="modal-product-name" id="modalName"></h2>
+          <div class="modal-meta">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-presentation" id="modalPresentation"></span>
+          </div>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-usage" id="modalUsage" style="display: none">
+            <strong>Modo de uso:</strong>
+            <span id="modalUsageText"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="productos.js"></script>
+  </body>
+</html>

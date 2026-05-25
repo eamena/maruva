@@ -15,32 +15,68 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <img
-            src="images/maruva_logo_clean.png"
-            alt="Maruva Logo"
-            class="logo"
-          />
+          <a href="index.html">
+            <img
+              src="images/maruva_logo_clean.png"
+              alt="Maruva Logo"
+              class="logo"
+            />
+          </a>
         </div>
         <div class="nav-menu" id="nav-menu">
-          <a href="#home" class="nav-link">Inicio</a>
+          <a href="index.html" class="nav-link active">Inicio</a>
           <div class="nav-item dropdown">
-            <a href="#products" class="nav-link dropdown-toggle">Productos</a>
+            <a href="#" class="nav-link dropdown-toggle">Productos</a>
             <div class="dropdown-menu">
-              <a href="#skincare" class="dropdown-link"
-                >JABONES CORPORALES Y FACIALES</a
-              >
-
-              <a href="#haircare" class="dropdown-link">CUIDADO FACIAL</a>
-              <a href="#wellness" class="dropdown-link">CUIDADO CORPORAL</a>
-              <a href="#skincare" class="dropdown-link">CUIDADO CAPILAR</a>
-              <a href="#haircare" class="dropdown-link">MASCOTAS</a>
-              <a href="#wellness" class="dropdown-link">HOGAR</a>
-              <a href="#skincare" class="dropdown-link">KITS</a>
-              <!-- <a href="#haircare" class="dropdown-link">CUIDADO FACIAL</a>
-              <a href="#wellness" class="dropdown-link">CUIDADO CORPORAL</a> -->
+              <a href="jabones.html" class="dropdown-link">JABONES CORPORALES Y FACIALES</a>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-facial.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO FACIAL <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-facial.html#balsamoslabiales" class="dropdown-link">Bálsamo labial</a>
+                  <a href="cuidado-facial.html#sueros" class="dropdown-link">Suero facial</a>
+                  <a href="cuidado-facial.html#mascarillas" class="dropdown-link">Mascarilla facial</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-corporal.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO CORPORAL <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-corporal.html#exfoliantes" class="dropdown-link">Cubos exfoliantes</a>
+                  <a href="cuidado-corporal.html#desodorantes" class="dropdown-link">Desodorante sólido</a>
+                  <a href="cuidado-corporal.html#refils" class="dropdown-link">Refil de desodorante</a>
+                  <a href="cuidado-corporal.html#cremas" class="dropdown-link">Crema corporal sólida</a>
+                  <a href="cuidado-corporal.html#bloqueador" class="dropdown-link">Bloqueador solar FPS 50</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-capilar.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO CAPILAR <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-capilar.html#mascarillas" class="dropdown-link">Mascarilla capilar</a>
+                  <a href="cuidado-capilar.html#acondicionadores" class="dropdown-link">Acondicionador</a>
+                  <a href="cuidado-capilar.html#shampoos" class="dropdown-link">Shampoo</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="mascotas.html" class="dropdown-link dropdown-submenu-toggle">MASCOTAS <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="mascotas.html" class="dropdown-link">Jabón</a>
+                  <a href="mascotas.html" class="dropdown-link">Cera protectora</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="hogar.html" class="dropdown-link dropdown-submenu-toggle">HOGAR <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="hogar.html#lavatrastes" class="dropdown-link">Bloque lavatraste</a>
+                  <a href="hogar.html#limpiador" class="dropdown-link">Limpiador multiusos</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="kits.html" class="dropdown-link dropdown-submenu-toggle">KITS <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="kits.html" class="dropdown-link">Kit peludos</a>
+                </div>
+              </div>
             </div>
           </div>
-
           <a href="filosofia.html" class="nav-link">Filosofía</a>
           <a href="about-us.html" class="nav-link">Acerca de Nosotros</a>
           <a href="#contact" class="nav-link">Contacto</a>
@@ -173,49 +209,46 @@
         <div class="products-grid">
           <div class="product-card">
             <div class="product-image">
-              <img src="images/hero.jpg" alt="Product 1" />
+              <img src="images/Jabón facial y corporal de avena_vainilla.jpg" alt="Jabón de Avena con Vainilla" />
               <div class="product-overlay">
-                <button class="product-button">View Details</button>
+                <a class="product-button" href="jabones.html#jabon-avena-vainilla">Ver Detalles</a>
               </div>
             </div>
             <div class="product-info">
-              <h3>Premium Collection 1</h3>
-              <p class="product-price">$199.99</p>
+              <h3>Jabón de Avena con Vainilla</h3>
+              <p class="product-price">$65.00</p>
               <p class="product-description">
-                High-quality craftsmanship meets modern design in this
-                exceptional piece.
+                Limpiador hidratante con exfoliación suave, ideal para piel sensible.
               </p>
             </div>
           </div>
           <div class="product-card">
             <div class="product-image">
-              <img src="images/hero.jpg" alt="Product 2" />
+              <img src="images/Jabón facial y corporal de lavanda_karité.jpg" alt="Jabón de Lavanda con Karitá" />
               <div class="product-overlay">
-                <button class="product-button">View Details</button>
+                <a class="product-button" href="jabones.html#jabon-lavanda-karite">Ver Detalles</a>
               </div>
             </div>
             <div class="product-info">
-              <h3>Premium Collection 2</h3>
-              <p class="product-price">$299.99</p>
+              <h3>Jabón de Lavanda con Karitá</h3>
+              <p class="product-price">$65.00</p>
               <p class="product-description">
-                Elegant design combined with functionality for the discerning
-                customer.
+                Efecto relajante para un mejor descanso, hidratación ideal para piel seca.
               </p>
             </div>
           </div>
           <div class="product-card">
             <div class="product-image">
-              <img src="images/hero.jpg" alt="Product 3" />
+              <img src="images/Jabón facial y corporal de eucalipto_aloe vera.jpg" alt="Jabón de Eucalipto con Aloe Vera" />
               <div class="product-overlay">
-                <button class="product-button">View Details</button>
+                <a class="product-button" href="jabones.html#jabon-eucalipto-aloe">Ver Detalles</a>
               </div>
             </div>
             <div class="product-info">
-              <h3>Premium Collection 3</h3>
-              <p class="product-price">$249.99</p>
+              <h3>Jabón de Eucalipto con Aloe Vera</h3>
+              <p class="product-price">$70.00</p>
               <p class="product-description">
-                Timeless style that complements any environment with superior
-                quality.
+                Propiedades antisépticas y antibacterianas para una limpieza profunda. Regula el exceso de grasa, ideal para piel grasa y mixta.
               </p>
             </div>
           </div>
@@ -223,44 +256,32 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Compromisos Section -->
+    <section id="compromisos" class="compromisos">
       <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2 class="section-title">¿Que dicen de Nosotros?</h2>
-            <div class="features-grid">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-gem"></i>
-                </div>
-                <h3>Premium Quality</h3>
-                <p>
-                  We source only the finest materials and work with skilled
-                  artisans to ensure exceptional quality in every product.
-                </p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-shipping-fast"></i>
-                </div>
-                <h3>Fast Delivery</h3>
-                <p>
-                  Quick and reliable shipping to get your products to you as
-                  soon as possible, with tracking every step of the way.
-                </p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <h3>Customer Care</h3>
-                <p>
-                  Our dedicated support team is here to help you with any
-                  questions or concerns about your purchase.
-                </p>
-              </div>
+        <h2 class="section-title">Nuestros Compromisos</h2>
+        <div class="compromisos-grid">
+          <div class="compromiso-card">
+            <div class="compromiso-icon">
+              <i class="fas fa-heart"></i>
             </div>
+            <h3>Bienestar Personal</h3>
+            <p>
+              Nuestros productos están hechos para ser amigables con el cuerpo:
+              libres de sustancias químicas dañinas, formulados para aportar
+              beneficios reales y verdadero cuidado a tu piel.
+            </p>
+          </div>
+          <div class="compromiso-card">
+            <div class="compromiso-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3>Cuidado del Planeta</h3>
+            <p>
+              Utilizamos ingredientes naturales que no contaminan el agua ni la
+              tierra. Sin agua en los productos, sin envases de plástico y con
+              un reciclaje consciente para reducir nuestra huella ambiental.
+            </p>
           </div>
         </div>
       </div>
@@ -354,7 +375,7 @@
             </div>
           </div>
           <div class="footer-section">
-            <h4>Expplora</h4>
+            <h4>Explora</h4>
             <ul>
               <li><a href="#home">Inicio</a></li>
               <li><a href="#products">Productos</a></li>

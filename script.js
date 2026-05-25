@@ -29,14 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
   dropdownToggles.forEach((toggle) => {
     toggle.addEventListener("click", function (e) {
-      // Only handle clicks on mobile
       if (window.innerWidth <= 768) {
         e.preventDefault();
         const dropdown = this.parentElement;
         dropdown.classList.toggle("active");
 
-        // Close other dropdowns
         dropdownToggles.forEach((otherToggle) => {
+          if (otherToggle !== this) {
+            otherToggle.parentElement.classList.remove("active");
+          }
+        });
+      }
+    });
+  });
+
+  // Mobile submenu toggle
+  const submenuToggles = document.querySelectorAll(".dropdown-submenu-toggle");
+  submenuToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth <= 768) {
+        const item = this.parentElement;
+        if (item.classList.contains("active")) {
+          // Already expanded — let the link navigate normally
+          return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+        item.classList.add("active");
+
+        submenuToggles.forEach((otherToggle) => {
           if (otherToggle !== this) {
             otherToggle.parentElement.classList.remove("active");
           }
@@ -94,7 +115,7 @@ const observer = new IntersectionObserver(function (entries) {
 // Add animation classes and observe elements
 document.addEventListener("DOMContentLoaded", function () {
   const animatedElements = document.querySelectorAll(
-    ".feature-card, .product-card, .about-text, .about-image, .contact-item, .contact-form"
+    ".feature-card, .product-card, .about-text, .about-image, .contact-item, .contact-form",
   );
 
   animatedElements.forEach((el) => {
@@ -106,58 +127,52 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // CTA Button click handler
-document.querySelector(".cta-button").addEventListener("click", function () {
-  document.querySelector("#products").scrollIntoView({
-    behavior: "smooth",
-    block: "start",
+const ctaButton = document.querySelector(".cta-button");
+if (ctaButton) {
+  ctaButton.addEventListener("click", function () {
+    const target = document.querySelector("#products");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   });
-});
+}
 
-// Product button click handlers
-document.querySelectorAll(".product-button").forEach((button) => {
-  button.addEventListener("click", function () {
-    // You can add product detail functionality here
-    alert("Product details coming soon!");
-  });
-});
 
 // Contact form submission
-document
-  .querySelector(".contact-form")
-  .addEventListener("submit", function (e) {
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Get form data
     const formData = new FormData(this);
     const name = formData.get("name");
     const email = formData.get("email");
     const message = formData.get("message");
 
-    // Simple validation
     if (!name || !email || !message) {
-      alert("Please fill in all fields.");
+      alert("Por favor llena todos los campos.");
       return;
     }
 
     if (!isValidEmail(email)) {
-      alert("Please enter a valid email address.");
+      alert("Por favor ingresa un correo electrónico válido.");
       return;
     }
 
-    // Simulate form submission
     const submitButton = this.querySelector(".submit-button");
     const originalText = submitButton.textContent;
 
-    submitButton.textContent = "Sending...";
+    submitButton.textContent = "Enviando...";
     submitButton.disabled = true;
 
     setTimeout(() => {
-      alert("Thank you for your message! We'll get back to you soon.");
+      alert("¡Gracias por tu mensaje! Te responderemos pronto.");
       this.reset();
       submitButton.textContent = originalText;
       submitButton.disabled = false;
     }, 2000);
   });
+}
 
 // Email validation helper function
 function isValidEmail(email) {
@@ -198,7 +213,7 @@ const statsObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.5 },
 );
 
 document.addEventListener("DOMContentLoaded", function () {

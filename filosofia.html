@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Filosofía - Maruva</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
   </head>
@@ -15,14 +15,71 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <!-- <img src="images/Logo.png" alt="Maruva Logo" class="logo"> -->
+          <a href="index.html">
+            <img
+              src="images/maruva_logo_clean.png"
+              alt="Maruva Logo"
+              class="logo"
+            />
+          </a>
         </div>
         <div class="nav-menu" id="nav-menu">
           <a href="index.html" class="nav-link">Inicio</a>
-          <a href="index.html#products" class="nav-link">Products</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Productos</a>
+            <div class="dropdown-menu">
+              <a href="jabones.html" class="dropdown-link">JABONES CORPORALES Y FACIALES</a>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-facial.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO FACIAL <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-facial.html#balsamoslabiales" class="dropdown-link">Bálsamo labial</a>
+                  <a href="cuidado-facial.html#sueros" class="dropdown-link">Suero facial</a>
+                  <a href="cuidado-facial.html#mascarillas" class="dropdown-link">Mascarilla facial</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-corporal.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO CORPORAL <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-corporal.html#exfoliantes" class="dropdown-link">Cubos exfoliantes</a>
+                  <a href="cuidado-corporal.html#desodorantes" class="dropdown-link">Desodorante sólido</a>
+                  <a href="cuidado-corporal.html#refils" class="dropdown-link">Refil de desodorante</a>
+                  <a href="cuidado-corporal.html#cremas" class="dropdown-link">Crema corporal sólida</a>
+                  <a href="cuidado-corporal.html#bloqueador" class="dropdown-link">Bloqueador solar FPS 50</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="cuidado-capilar.html" class="dropdown-link dropdown-submenu-toggle">CUIDADO CAPILAR <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="cuidado-capilar.html#mascarillas" class="dropdown-link">Mascarilla capilar</a>
+                  <a href="cuidado-capilar.html#acondicionadores" class="dropdown-link">Acondicionador</a>
+                  <a href="cuidado-capilar.html#shampoos" class="dropdown-link">Shampoo</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="mascotas.html" class="dropdown-link dropdown-submenu-toggle">MASCOTAS <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="mascotas.html" class="dropdown-link">Jabón</a>
+                  <a href="mascotas.html" class="dropdown-link">Cera protectora</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="hogar.html" class="dropdown-link dropdown-submenu-toggle">HOGAR <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="hogar.html#lavatrastes" class="dropdown-link">Bloque lavatraste</a>
+                  <a href="hogar.html#limpiador" class="dropdown-link">Limpiador multiusos</a>
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a href="kits.html" class="dropdown-link dropdown-submenu-toggle">KITS <span class="submenu-arrow">›</span></a>
+                <div class="dropdown-submenu">
+                  <a href="kits.html" class="dropdown-link">Kit peludos</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="filosofia.html" class="nav-link active">Filosofía</a>
           <a href="about-us.html" class="nav-link">Acerca de Nosotros</a>
-          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="index.html#contact" class="nav-link">Contacto</a>
         </div>
         <div class="nav-toggle" id="nav-toggle">
           <span class="bar"></span>
@@ -97,51 +154,41 @@
               Todos nuestros productos están hechos artesanalmente con flores,
               hierbas, aceites esenciales, arcillas, aceites, pigmentos
               minerales y vegetales, mantecas vegetales, semillas, fragancias
-              libres de ftalatos
+              libres de ftalatos.
             </p>
 
-            <p>Maruva significa “Flores” en el lenguaje Shona</p>
+            <p>Maruva significa "Flores" en el lenguaje Shona.</p>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Philosophy Pillars -->
-          <div class="philosophy-pillars">
-            <div class="pillar">
-              <div class="pillar-icon">
-                <i class="fas fa-leaf"></i>
-              </div>
-              <h3>Sostenibilidad</h3>
-              <p>
-                Cada decisión que tomamos considera el impacto ambiental a largo
-                plazo.
-              </p>
+    <!-- Compromisos Section -->
+    <section class="compromisos">
+      <div class="container">
+        <h2 class="section-title">Nuestros Compromisos</h2>
+        <div class="compromisos-grid">
+          <div class="compromiso-card">
+            <div class="compromiso-icon">
+              <i class="fas fa-heart"></i>
             </div>
-            <div class="pillar">
-              <div class="pillar-icon">
-                <i class="fas fa-heart"></i>
-              </div>
-              <h3>Bienestar</h3>
-              <p>
-                Priorizamos tu salud y la de tu familia en cada ingrediente que
-                seleccionamos.
-              </p>
+            <h3>Bienestar Personal</h3>
+            <p>
+              Nuestros productos están hechos para ser amigables con el cuerpo:
+              libres de sustancias químicas dañinas, formulados para aportar
+              beneficios reales y verdadero cuidado a tu piel.
+            </p>
+          </div>
+          <div class="compromiso-card">
+            <div class="compromiso-icon">
+              <i class="fas fa-globe-americas"></i>
             </div>
-            <div class="pillar">
-              <div class="pillar-icon">
-                <i class="fas fa-handshake"></i>
-              </div>
-              <h3>Transparencia</h3>
-              <p>
-                Creemos en la honestidad total sobre nuestros procesos e
-                ingredientes.
-              </p>
-            </div>
-            <!-- <div class="pillar">
-              <div class="pillar-icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <h3>Comunidad</h3>
-              <p>Juntos construimos un futuro más consciente y responsable.</p>
-            </div> -->
+            <h3>Cuidado del Planeta</h3>
+            <p>
+              Utilizamos ingredientes naturales que no contaminan el agua ni la
+              tierra. Sin agua en los productos, sin envases de plástico y con
+              un reciclaje consciente para reducir nuestra huella ambiental.
+            </p>
           </div>
         </div>
       </div>
@@ -169,22 +216,27 @@
         <div class="footer-content">
           <div class="footer-section">
             <h3>Maruva</h3>
-            <p>Premium products for modern living.</p>
+            <p>Enamorando tu piel.</p>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100034228426046"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/maruvanatural/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/5511460393"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
           </div>
           <div class="footer-section">
-            <h4>Enlaces Rápidos</h4>
+            <h4>Explora</h4>
             <ul>
               <li><a href="index.html">Inicio</a></li>
-              <li><a href="index.html#products">Products</a></li>
+              <li><a href="index.html#products">Productos</a></li>
               <li><a href="filosofia.html">Filosofía</a></li>
               <li><a href="about-us.html">Acerca de Nosotros</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
             </ul>
           </div>
           <div class="footer-section">
@@ -193,7 +245,6 @@
               <li><a href="#">Información de Envío</a></li>
               <li><a href="#">Devoluciones</a></li>
               <li><a href="#">Preguntas Frecuentes</a></li>
-              <li><a href="#">Soporte</a></li>
             </ul>
           </div>
         </div>

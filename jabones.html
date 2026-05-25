@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jabones - Maruva</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img
+              src="images/maruva_logo_clean.png"
+              alt="Maruva Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Productos</a>
+            <div class="dropdown-menu">
+              <a href="jabones.html" class="dropdown-link"
+                >JABONES CORPORALES Y FACIALES</a
+              >
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-facial.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO FACIAL <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-facial.html#balsamoslabiales"
+                    class="dropdown-link"
+                    >Bálsamo labial</a
+                  >
+                  <a href="cuidado-facial.html#sueros" class="dropdown-link"
+                    >Suero facial</a
+                  >
+                  <a
+                    href="cuidado-facial.html#mascarillas"
+                    class="dropdown-link"
+                    >Mascarilla facial</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-corporal.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO CORPORAL <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-corporal.html#exfoliantes"
+                    class="dropdown-link"
+                    >Cubos exfoliantes</a
+                  >
+                  <a
+                    href="cuidado-corporal.html#desodorantes"
+                    class="dropdown-link"
+                    >Desodorante sólido</a
+                  >
+                  <a href="cuidado-corporal.html#refils" class="dropdown-link"
+                    >Refil de desodorante</a
+                  >
+                  <a href="cuidado-corporal.html#cremas" class="dropdown-link"
+                    >Crema corporal sólida</a
+                  >
+                  <a
+                    href="cuidado-corporal.html#bloqueador"
+                    class="dropdown-link"
+                    >Bloqueador solar FPS 50</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-capilar.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO CAPILAR <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-capilar.html#mascarillas"
+                    class="dropdown-link"
+                    >Mascarilla capilar</a
+                  >
+                  <a
+                    href="cuidado-capilar.html#acondicionadores"
+                    class="dropdown-link"
+                    >Acondicionador</a
+                  >
+                  <a href="cuidado-capilar.html#shampoos" class="dropdown-link"
+                    >Shampoo</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="mascotas.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >MASCOTAS <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="mascotas.html" class="dropdown-link">Jabón</a>
+                  <a href="mascotas.html" class="dropdown-link"
+                    >Cera protectora</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="hogar.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >HOGAR <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="hogar.html#lavatrastes" class="dropdown-link"
+                    >Bloque lavatraste</a
+                  >
+                  <a href="hogar.html#limpiador" class="dropdown-link"
+                    >Limpiador multiusos</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="kits.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >KITS <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="kits.html" class="dropdown-link">Kit peludos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="filosofia.html" class="nav-link">Filosofía</a>
+          <a href="about-us.html" class="nav-link">Acerca de Nosotros</a>
+          <a href="index.html#contact" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container hero-centered">
+        <div class="hero-content">
+          <h1 class="hero-title">Jabones Corporales y Faciales</h1>
+          <p class="hero-subtitle">
+            Elaborados artesanalmente con ingredientes naturales, veganos y
+            libres de tóxicos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="category-products">
+      <div class="container">
+        <div class="product-catalog-grid">
+          <!-- Jabón de Mango con Jojoba -->
+          <div
+            class="product-catalog-card"
+            id="jabon-mango-jojoba"
+            tabindex="0"
+            data-name="Jabón de Mango con Jojoba"
+            data-price="$78.00"
+            data-presentation="100 gr"
+            data-description="Rico en ácidos grasos (oleico y esteárico), vitaminas A, E y C. Alta hidratación sin obstruir poros. El aceite de jojoba regula la producción de sebo, calma la irritación y actúa como antimicrobiano. La mantequilla de mango con propiedades antioxidantes y antiinflamatorias protege contra el envejecimiento prematuro y ayuda a reducir estrías y cicatrices. Delicioso aroma a mango."
+            data-image="images/Jabón facial y corporal de mango_jojoba.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de mango_jojoba.jpg"
+                alt="Jabón de Mango con Jojoba"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Mango con Jojoba</h3>
+              <p class="product-price">$78.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Manzanilla con Caléndula -->
+          <div
+            class="product-catalog-card"
+            id="jabon-manzanilla-calendula"
+            tabindex="0"
+            data-name="Jabón de Manzanilla con Caléndula"
+            data-price="$80.00"
+            data-presentation="100 gr"
+            data-description="Creado para pieles delicadas. Excelente para piel extra seca, sensible o con problemas dermatológicos. Rico en ácidos grasos, antioxidantes y vitamina E de la manteca de cacao. Los extractos de manzanilla y caléndula tienen propiedades calmantes, cicatrizantes y antiinflamatorias que ayudan a tratar el sarpullido y la irritación cutánea. Ideal para bebés y pieles sensibles."
+            data-image="images/Jabón facial y coporal de manzanilla_caléndula.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y coporal de manzanilla_caléndula.jpg"
+                alt="Jabón de Manzanilla con Caléndula"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Manzanilla con Caléndula</h3>
+              <p class="product-price">$80.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Avena con Vainilla -->
+          <div
+            class="product-catalog-card"
+            id="jabon-avena-vainilla"
+            tabindex="0"
+            data-name="Jabón de Avena con Vainilla"
+            data-price="$76.00"
+            data-presentation="100 gr"
+            data-description="Alta hidratación, propiedades antioxidantes y calmantes. Ayuda a nutrir y aliviar irritaciones como dermatitis, eczema y picazón. Limpia y combate el acné. La avena exfolia suavemente. Recomendado para piel sensible, seca, con problemas dermatológicos, adultos mayores y personas con diabetes."
+            data-image="images/Jabón facial y corporal de avena_vainilla.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de avena_vainilla.jpg"
+                alt="Jabón de Avena con Vainilla"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Avena con Vainilla</h3>
+              <p class="product-price">$76.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Coco con Arcilla Blanca -->
+          <div
+            class="product-catalog-card"
+            id="jabon-coco-arcilla"
+            tabindex="0"
+            data-name="Jabón de Coco con Arcilla Blanca"
+            data-price="$76.00"
+            data-presentation="100 gr"
+            data-description="Barra blanca con delicioso aroma a coco. Nutre la piel seca, restaura la barrera cutánea, calma la inflamación y el picor, combate el envejecimiento prematuro. Exfoliante suave. La arcilla blanca con silicio regula el sebo, hidrata, suaviza y mejora la circulación para una piel radiante."
+            data-image="images/Jabón facial y corporal de coco_arcilla blanca.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de coco_arcilla blanca.jpg"
+                alt="Jabón de Coco con Arcilla Blanca"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Coco con Arcilla Blanca</h3>
+              <p class="product-price">$76.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Rosas con Karité -->
+          <div
+            class="product-catalog-card"
+            id="jabon-rosas-karite"
+            tabindex="0"
+            data-name="Jabón de Rosas con Karité"
+            data-price="$77.00"
+            data-presentation="100 gr"
+            data-description="Rico aroma a rosas. La combinación de manteca de karité y extracto de rosa tiene propiedades calmantes, hidratantes, antioxidantes y regeneradoras. Estimula la regeneración celular, mejora la elasticidad de la piel y reduce las arrugas. Alto poder nutritivo e hidratante, restaura y protege la barrera cutánea."
+            data-image="images/Jabón facial y corporal de rosas_karité.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de rosas_karité.jpg"
+                alt="Jabón de Rosas con Karité"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Rosas con Karité</h3>
+              <p class="product-price">$77.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Lavanda con Karité -->
+          <div
+            class="product-catalog-card"
+            id="jabon-lavanda-karite"
+            tabindex="0"
+            data-name="Jabón de Lavanda con Karité"
+            data-price="$78.00"
+            data-presentation="100 gr"
+            data-description="Barra morada, perfecta para la rutina nocturna. La lavanda ayuda a relajarse y dormir mejor. Regeneradora, calmante y antiinflamatoria. Ayuda a la piel a cicatrizar heridas y calmar picaduras de insectos. Sus efectos antisépticos y astringentes regulan la producción de grasa y limpian el rostro. La manteca de karité hidrata y nutre."
+            data-image="images/Jabón facial y corporal de lavanda_karité.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de lavanda_karité.jpg"
+                alt="Jabón de Lavanda con Karité"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Lavanda con Karité</h3>
+              <p class="product-price">$78.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Eucalipto con Aloe Vera -->
+          <div
+            class="product-catalog-card"
+            id="jabon-eucalipto-aloe"
+            tabindex="0"
+            data-name="Jabón de Eucalipto con Aloe Vera"
+            data-price="$76.00"
+            data-presentation="100 gr"
+            data-description="Excelente para piel grasa y mixta. Sus propiedades antisépticas y antibacterianas limpian profundamente, combaten el acné y reducen el exceso de grasa. Mantiene la hidratación y el tono. Rico en vitaminas C y E, combate los radicales libres y reduce líneas finas. Contiene pequeñas semillas de chía para una exfoliación suave."
+            data-image="images/Jabón facial y corporal de eucalipto_aloe vera.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de eucalipto_aloe vera.jpg"
+                alt="Jabón de Eucalipto con Aloe Vera"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Eucalipto con Aloe Vera</h3>
+              <p class="product-price">$76.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón Facial de Carbón Activado con Limón -->
+          <div
+            class="product-catalog-card"
+            id="jabon-carbon-limon"
+            tabindex="0"
+            data-name="Jabón Facial de Carbón Activado con Limón"
+            data-price="$78.00"
+            data-presentation="100 gr"
+            data-description="Potente detox que limpia profundamente, absorbe el exceso de grasa, toxinas, suciedad y residuos de polución de los poros. Especialmente efectivo para piel grasa o propensa al acné. Reduce puntos negros y minimiza el tamaño de los poros. Las propiedades del limón aclaran e iluminan la piel. Su contenido de vitamina C es perfecto para desvanecer manchas solares o de acné."
+            data-image="images/Jabón facial de carbón activado_limón.jpg"
+            data-usage="Usar 2-3 veces por semana, exclusivamente en la noche."
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial de carbón activado_limón.jpg"
+                alt="Jabón Facial de Carbón Activado con Limón"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón Facial de Carbón Activado con Limón</h3>
+              <p class="product-price">$78.00</p>
+            </div>
+          </div>
+
+          <!-- Jabón de Menta con Pepino -->
+          <div
+            class="product-catalog-card"
+            id="jabon-menta-pepino"
+            tabindex="0"
+            data-name="Jabón de Menta con Pepino"
+            data-price="$76.00"
+            data-presentation="100 gr"
+            data-description="El jabón más refrescante. El pepino, rico en agua y vitaminas A, C y E, hidrata intensamente y deja la piel suave. Ideal para quemaduras solares, irritación y enrojecimiento. Sus propiedades astringentes y antibacterianas combaten el acné y regulan el sebo. Rico en antioxidantes que combaten los radicales libres, estimulan la producción de colágeno y mejoran la elasticidad."
+            data-image="images/Jabón facial y corporal de menta_pepino.jpg"
+          >
+            <div class="product-catalog-image">
+              <img
+                src="images/Jabón facial y corporal de menta_pepino.jpg"
+                alt="Jabón de Menta con Pepino"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-catalog-info">
+              <h3>Jabón de Menta con Pepino</h3>
+              <p class="product-price">$76.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div
+      class="modal-overlay"
+      id="productModal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
+        <div class="modal-image-col">
+          <img id="modalImage" src="" alt="" />
+          <div id="modalNoImage" class="modal-no-image" style="display: none">
+            <i class="fas fa-leaf"></i>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 class="modal-product-name" id="modalName"></h2>
+          <div class="modal-meta">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-presentation" id="modalPresentation"></span>
+          </div>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-usage" id="modalUsage" style="display: none">
+            <strong>Modo de uso:</strong>
+            <span id="modalUsageText"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Maruva</h3>
+            <p>Enamorando tu piel.</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100034228426046"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/maruvanatural/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/5511460393"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Explora</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="jabones.html">Productos</a></li>
+              <li><a href="filosofia.html">Filosofía</a></li>
+              <li><a href="about-us.html">Acerca de Nosotros</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Servicio Al Cliente</h4>
+            <ul>
+              <li><a href="#">Información de Envío</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maruva. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="productos.js"></script>
+  </body>
+</html>

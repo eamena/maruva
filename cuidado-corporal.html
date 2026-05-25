@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuidado Corporal - Maruva</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img
+              src="images/maruva_logo_clean.png"
+              alt="Maruva Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle">Productos</a>
+            <div class="dropdown-menu">
+              <a href="jabones.html" class="dropdown-link"
+                >JABONES CORPORALES Y FACIALES</a
+              >
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-facial.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO FACIAL <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-facial.html#balsamoslabiales"
+                    class="dropdown-link"
+                    >Bálsamo labial</a
+                  >
+                  <a href="cuidado-facial.html#sueros" class="dropdown-link"
+                    >Suero facial</a
+                  >
+                  <a
+                    href="cuidado-facial.html#mascarillas"
+                    class="dropdown-link"
+                    >Mascarilla facial</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-corporal.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO CORPORAL <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-corporal.html#exfoliantes"
+                    class="dropdown-link"
+                    >Cubos exfoliantes</a
+                  >
+                  <a
+                    href="cuidado-corporal.html#desodorantes"
+                    class="dropdown-link"
+                    >Desodorante sólido</a
+                  >
+                  <a href="cuidado-corporal.html#refils" class="dropdown-link"
+                    >Refil de desodorante</a
+                  >
+                  <a href="cuidado-corporal.html#cremas" class="dropdown-link"
+                    >Crema corporal sólida</a
+                  >
+                  <a
+                    href="cuidado-corporal.html#bloqueador"
+                    class="dropdown-link"
+                    >Bloqueador solar FPS 50</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="cuidado-capilar.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >CUIDADO CAPILAR <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a
+                    href="cuidado-capilar.html#mascarillas"
+                    class="dropdown-link"
+                    >Mascarilla capilar</a
+                  >
+                  <a
+                    href="cuidado-capilar.html#acondicionadores"
+                    class="dropdown-link"
+                    >Acondicionador</a
+                  >
+                  <a href="cuidado-capilar.html#shampoos" class="dropdown-link"
+                    >Shampoo</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="mascotas.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >MASCOTAS <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="mascotas.html" class="dropdown-link">Jabón</a>
+                  <a href="mascotas.html" class="dropdown-link"
+                    >Cera protectora</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="hogar.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >HOGAR <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="hogar.html#lavatrastes" class="dropdown-link"
+                    >Bloque lavatraste</a
+                  >
+                  <a href="hogar.html#limpiador" class="dropdown-link"
+                    >Limpiador multiusos</a
+                  >
+                </div>
+              </div>
+              <div class="dropdown-submenu-item">
+                <a
+                  href="kits.html"
+                  class="dropdown-link dropdown-submenu-toggle"
+                  >KITS <span class="submenu-arrow">›</span></a
+                >
+                <div class="dropdown-submenu">
+                  <a href="kits.html" class="dropdown-link">Kit peludos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="filosofia.html" class="nav-link">Filosofía</a>
+          <a href="about-us.html" class="nav-link">Acerca de Nosotros</a>
+          <a href="index.html#contact" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="category-hero">
+      <div class="container">
+        <h1>Cuidado Corporal</h1>
+        <p>
+          Exfoliantes, desodorantes y cremas sólidas formulados con ingredientes
+          naturales para cuidar tu cuerpo
+        </p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="category-products">
+      <div class="container">
+        <!-- Cubos Exfoliantes -->
+        <div class="category-section" id="exfoliantes">
+          <h2 class="category-section-title">Cubos Exfoliantes</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="exf-te-verde-miel"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Cubo Exfoliante de Té Verde y Miel"
+              data-price="$146.00"
+              data-presentation="80 gr"
+              data-description="Para hidratar y devolver el brillo, nada mejor que el té verde con miel. El té verde es un excelente aliado de belleza junto con la miel: ingredientes esenciales para hidratar y devolver vitalidad a la piel gracias a sus agentes antibacterianos y antioxidantes. Combinado con azúcar y aceite de coco, la piel se exfolia de manera increíble mientras se retrasa el envejecimiento y se hidrata cada célula."
+              data-image="images/Cubo exfoliante de té verde y miel.jpg"
+              data-usage="Frota la barra humedecida sobre las partes del cuerpo que deseas exfoliar, luego enjuaga. Usar 2-3 veces por semana."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Cubo exfoliante de té verde y miel.jpg"
+                  alt="Cubo Exfoliante de Té Verde y Miel"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Cubo Exfoliante de Té Verde y Miel</h3>
+                <p class="product-price">$146.00</p>
+              </div>
+            </div>
+
+            <div
+              id="exf-cafe"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Cubo Exfoliante de Café"
+              data-price="$146.00"
+              data-presentation="80 gr"
+              data-description="Prepara la piel para suavidad y tersura con el delicioso aroma a café. El poso de café, el azúcar y el aceite de coco se combinan para un mágico despertar de la piel. Exfolia suavemente dejando la piel suave, tersa y libre de células muertas."
+              data-image="images/Cubo exfoliante de café.jpg"
+              data-usage="Frota la barra humedecida sobre las partes del cuerpo que deseas exfoliar, luego enjuaga. Usar 2-3 veces por semana."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Cubo exfoliante de café.jpg"
+                  alt="Cubo Exfoliante de Café"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Cubo Exfoliante de Café</h3>
+                <p class="product-price">$146.00</p>
+              </div>
+            </div>
+
+            <div
+              id="exf-carbon"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Cubo Exfoliante de Carbón Activado"
+              data-price="$146.00"
+              data-presentation="80 gr"
+              data-description="Complementa la limpieza de tu piel con esta barra de carbón activado. Para quienes sueñan con liberarse de toxinas, aclarar el cutis, descongestionar los poros y ofrecer un auténtico descanso al ecosistema cutáneo. Combinado con azúcar, carbón activado y aceite de coco, consigue un efecto piel nueva al instante."
+              data-image="images/Cubo exfoliante de carbón activado.jpg"
+              data-usage="Frota la barra humedecida sobre las partes del cuerpo que deseas exfoliar, luego enjuaga. Usar 2-3 veces por semana."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Cubo exfoliante de carbón activado.jpg"
+                  alt="Cubo Exfoliante de Carbón Activado"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Cubo Exfoliante de Carbón Activado</h3>
+                <p class="product-price">$146.00</p>
+              </div>
+            </div>
+
+            <div
+              id="exf-lavanda"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Cubo Exfoliante de Lavanda"
+              data-price="$146.00"
+              data-presentation="80 gr"
+              data-description="Exfoliante perfecto para piel seca. Bellamente perfumado, tiene efectos calmantes naturales. La lavanda es maravillosa para la circulación sanguínea, el envejecimiento y los dolores musculares. Combinada con azúcar para eliminar células muertas y aceite de coco para nutrir e hidratar."
+              data-image="images/Cubo exofliante de lavanda.jpg"
+              data-usage="Frota la barra humedecida sobre las partes del cuerpo que deseas exfoliar, luego enjuaga. Usar 2-3 veces por semana."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Cubo exofliante de lavanda.jpg"
+                  alt="Cubo Exfoliante de Lavanda"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Cubo Exfoliante de Lavanda</h3>
+                <p class="product-price">$146.00</p>
+              </div>
+            </div>
+
+            <div
+              id="exf-rosas"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Cubo Exfoliante de Rosas"
+              data-price="$146.00"
+              data-presentation="80 gr"
+              data-description="Este cubo exfoliante te dejará asombrada por su aroma y efectos, dejando la piel suave y tersa. El azúcar, el aceite de coco y el agua de rosas son los ingredientes perfectos para que la piel permanezca suave como pétalos de rosa."
+              data-image="images/Cubo exfoliante de rosas.jpg"
+              data-usage="Frota la barra humedecida sobre las partes del cuerpo que deseas exfoliar, luego enjuaga. Usar 2-3 veces por semana."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Cubo exfoliante de rosas.jpg"
+                  alt="Cubo Exfoliante de Rosas"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Cubo Exfoliante de Rosas</h3>
+                <p class="product-price">$146.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desodorantes Sólidos -->
+        <div class="category-section" id="desodorantes">
+          <h2 class="category-section-title">Desodorantes Sólidos</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="deo-limon-arbol-te"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Desodorante Sólido de Limón y Árbol de Té"
+              data-price="$288.00"
+              data-presentation="60 gr (envase de aluminio reutilizable)"
+              data-description="Refresca, protege y cuida la piel con nuestra fórmula mejorada desarrollada con biotecnología y activos minerales de última generación. Ofrece protección efectiva de 8-12 horas sin bloquear la transpiración natural ni alterar la microbiota cutánea. Neutraliza el olor desde el origen, respetando el equilibrio axilar natural. Fórmula sin bicarbonato de sodio, ideal para piel sensible. Textura cremosa con acabado seco y aterciopelado, sensación de frescura cítrica."
+              data-image="images/Desodorante sólido limón y árbol de té.jpg"
+              data-usage="Aplica una pequeña cantidad en la axila limpia y seca. Extiende suavemente hasta absorber. Espera unos segundos antes de vestirte. Una capa ligera es suficiente para una protección efectiva."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Desodorante sólido limón y árbol de té.jpg"
+                  alt="Desodorante Sólido de Limón y Árbol de Té"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Desodorante Sólido de Limón y Árbol de Té</h3>
+                <p class="product-price">$288.00</p>
+              </div>
+            </div>
+
+            <div
+              id="deo-mandarina-lavanda"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Desodorante Sólido de Mandarina y Lavanda"
+              data-price="$288.00"
+              data-presentation="60 gr (envase de aluminio reutilizable)"
+              data-description="Cuida la piel y acompaña el día con una sensación de calma y frescura gracias a nuestra fórmula mejorada que protege eficazmente sin bloquear la transpiración natural. Neutraliza el olor desde el origen, respetando la microbiota y el pH de la piel, ofreciendo una protección cómoda y confiable de 8-12 horas incluso en piel sensible. Fórmula sin bicarbonato, textura cremosa de absorción rápida con acabado seco y sutil aroma cítrico-floral."
+              data-image="images/Desodorante sólido mandarina y lavanda.jpg"
+              data-usage="Aplica una pequeña cantidad en la axila limpia y seca. Extiende suavemente hasta absorber. Espera unos segundos antes de vestirte. Una capa ligera es suficiente para una protección efectiva."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Desodorante sólido mandarina y lavanda.jpg"
+                  alt="Desodorante Sólido de Mandarina y Lavanda"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Desodorante Sólido de Mandarina y Lavanda</h3>
+                <p class="product-price">$288.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Refil de Desodorante -->
+        <div class="category-section" id="refils">
+          <h2 class="category-section-title">Refil de Desodorante</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="refil-limon"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Refil Desodorante Limón y Árbol de Té"
+              data-price="$247.00"
+              data-presentation="60 gr"
+              data-description="Mantén la frescura natural y saludable con el formato recargable. Diseñado para eliminar las bacterias causantes del olor sin obstruir los poros, la fórmula antiséptica enriquecida con aceites esenciales de limón y árbol de té ofrece protección duradera sin comprometer la suavidad de la piel. Libre de bicarbonato y perfecto para piel sensible. Recarga tu envase original y disfruta de frescura continua con la confianza de un producto cruelty-free y vegano."
+              data-image="images/Refil de desodorantes limón-arból de té y mandarina-lavanda.jpeg"
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Refil de desodorantes limón-arból de té y mandarina-lavanda.jpeg"
+                  alt="Refil Desodorante Limón y Árbol de Té"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Refil Desodorante Limón y Árbol de Té</h3>
+                <p class="product-price">$247.00</p>
+              </div>
+            </div>
+
+            <div
+              id="refil-mandarina"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Refil Desodorante Mandarina y Lavanda"
+              data-price="$247.00"
+              data-presentation="60 gr"
+              data-description="La combinación única de aceites esenciales de mandarina y lavanda, en formato recargable, ofrece una opción ecológica y práctica que mantiene el control del olor y la transpiración de forma duradera. Libre de químicos agresivos, amigable con la piel y el medio ambiente. El formato recargable es perfecto para recargar el envase original, ayudando a reducir residuos."
+              data-image="images/Refil de desodorantes limón-arból de té y mandarina-lavanda.jpeg"
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Refil de desodorantes limón-arból de té y mandarina-lavanda.jpeg"
+                  alt="Refil Desodorante Mandarina y Lavanda"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Refil Desodorante Mandarina y Lavanda</h3>
+                <p class="product-price">$247.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cremas Corporales Sólidas -->
+        <div class="category-section" id="cremas">
+          <h2 class="category-section-title">Cremas Corporales Sólidas</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="crema-cafe"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Crema Corporal Sólida de Café"
+              data-price="$259.00"
+              data-presentation="90 gr"
+              data-description="Estimula y tonifica la piel con aceite y mantequilla de café, mejora la apariencia de piel cansada. Aporta firmeza y suavidad con aceites de uva y aguacate, ideal para masajes energizantes en piernas y zonas específicas. Perfecta para piel cansada, opaca o que le falta firmeza. El cálido y ligeramente achocolatado aroma convierte cada aplicación en una deliciosa experiencia sensorial."
+              data-image="images/Crema corporal sólida de café.jpg"
+              data-usage="Pasa la barra directamente sobre la piel seca o ligeramente húmeda, preferiblemente después de la ducha. Deja que se derrita suavemente con el calor del cuerpo, masajea hasta absorber."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Crema corporal sólida de café.jpg"
+                  alt="Crema Corporal Sólida de Café"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Crema Corporal Sólida de Café</h3>
+                <p class="product-price">$259.00</p>
+              </div>
+            </div>
+
+            <div
+              id="crema-arandanos"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Crema Corporal Sólida de Arándanos"
+              data-price="$259.00"
+              data-presentation="90 gr"
+              data-description="Tu aliada para una piel luminosa, protegida y llena de vitalidad. Combate los radicales libres con antioxidantes naturales, previene signos de envejecimiento como la flacidez o el tono apagado, aporta luminosidad y un tono uniforme. Suaviza y revitaliza con mantequilla de arándanos y karité. Textura cremosa y delicado aroma frutal transforman la rutina de cuidado en un ritual de amor propio."
+              data-image="images/Crema corporal sólida de arándanos.jpg"
+              data-usage="Pasa la barra directamente sobre la piel seca o ligeramente húmeda, preferiblemente después de la ducha. Deja que se derrita suavemente con el calor del cuerpo, masajea hasta absorber."
+            >
+              <div class="product-catalog-image">
+                <img
+                  src="images/Crema corporal sólida de arándanos.jpg"
+                  alt="Crema Corporal Sólida de Arándanos"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-catalog-info">
+                <h3>Crema Corporal Sólida de Arándanos</h3>
+                <p class="product-price">$259.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloqueador Solar -->
+        <div class="category-section" id="bloqueador">
+          <h2 class="category-section-title">Bloqueador Solar</h2>
+          <div class="product-catalog-grid">
+            <div
+              id="bloqueador-fps50"
+              class="product-catalog-card"
+              tabindex="0"
+              data-name="Bloqueador Solar FPS 50"
+              data-price="Próximamente"
+              data-presentation="Próximamente"
+              data-description="Próximamente disponible: protección solar natural en formato sólido, libre de químicos agresivos y respetuoso con tu piel y el medio ambiente."
+            >
+              <div class="product-catalog-image">
+                <div class="product-no-image"><i class="fas fa-leaf"></i></div>
+              </div>
+              <div class="product-catalog-info">
+                <h3>Bloqueador Solar FPS 50</h3>
+                <p class="product-price">Próximamente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Maruva</h3>
+            <p>Enamorando tu piel.</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100034228426046"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/maruvanatural/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/5511460393"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Explora</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="jabones.html">Productos</a></li>
+              <li><a href="filosofia.html">Filosofía</a></li>
+              <li><a href="about-us.html">Acerca de Nosotros</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Servicio Al Cliente</h4>
+            <ul>
+              <li><a href="#">Información de Envío</a></li>
+              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Maruva. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div
+      class="modal-overlay"
+      id="productModal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-card">
+        <button class="modal-close" aria-label="Cerrar">&times;</button>
+        <div class="modal-image-col">
+          <img id="modalImage" src="" alt="" />
+          <div id="modalNoImage" class="modal-no-image" style="display: none">
+            <i class="fas fa-leaf"></i>
+          </div>
+        </div>
+        <div class="modal-info">
+          <h2 class="modal-product-name" id="modalName"></h2>
+          <div class="modal-meta">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-presentation" id="modalPresentation"></span>
+          </div>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-usage" id="modalUsage" style="display: none">
+            <strong>Modo de uso:</strong>
+            <span id="modalUsageText"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="productos.js"></script>
+  </body>
+</html>
