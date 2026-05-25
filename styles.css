@@ -6,7 +6,10 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
@@ -295,9 +298,9 @@ body {
 
 .section-title {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #3a2a52;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
 }
 
 .features-grid {
@@ -1115,16 +1118,44 @@ html {
 /* About Us Page Styles */
 .about-hero {
   margin-top: 80px;
-  padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  position: relative;
+  padding: 0;
+}
+
+.about-hero .hero-background {
+  position: relative;
+  background-image: url("images/compromisos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
   text-align: center;
+  color: white;
 }
 
 .page-title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .page-subtitle {
@@ -1132,6 +1163,7 @@ html {
   opacity: 0.9;
   max-width: 600px;
   margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .company-story {
@@ -1294,11 +1326,11 @@ html {
   text-align: justify;
 }
 
-.liz-text p:first-child {
+/* .liz-text p:first-child {
   font-size: 1.2rem;
   font-weight: 500;
   color: #3a2a52;
-}
+} */
 
 .team-member:hover {
   transform: translateY(-10px);
@@ -1451,6 +1483,10 @@ html {
 
 /* About Us Page Responsive Styles */
 @media (max-width: 768px) {
+  .about-hero .hero-background {
+    min-height: 50vh;
+  }
+
   .page-title {
     font-size: 2.5rem;
   }
@@ -1489,8 +1525,8 @@ html {
 }
 
 @media (max-width: 480px) {
-  .about-hero {
-    padding: 60px 0;
+  .about-hero .hero-background {
+    min-height: 40vh;
   }
 
   .page-title {
@@ -1589,11 +1625,11 @@ html {
   text-align: justify;
 }
 
-.philosophy-text p:first-child {
+/* .philosophy-text p:first-child {
   font-size: 1.2rem;
   font-weight: 500;
   color: #3a2a52;
-}
+} */
 
 .philosophy-pillars {
   display: grid;
@@ -1843,7 +1879,9 @@ html {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -1932,7 +1970,47 @@ html {
   padding: 20px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* Sobre Mi Section with Background Image */
+.sobre-mi-section {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.sobre-mi-section .section-background {
+  position: relative;
+  background-image: url("images/sobre-mi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sobre-mi-section .section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .modal-overlay.active {
@@ -2107,6 +2185,57 @@ html {
   }
 }
 
+.sobre-mi-section .container {
+  position: relative;
+  z-index: 2;
+  padding: 80px 20px;
+}
+
+.sobre-mi-section .section-title {
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.sobre-mi-section .liz-text p {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.sobre-mi-section .liz-text p b {
+  color: #2c3e50;
+}
+
+.sobre-mi-section .liz-text p:last-child {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Responsive styles for sobre-mi section */
+@media (max-width: 768px) {
+  .sobre-mi-section .section-background {
+    background-attachment: scroll;
+    min-height: auto;
+  }
+
+  .sobre-mi-section .container {
+    padding: 60px 20px;
+  }
+
+  .sobre-mi-section .liz-text p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 480px) {
   .product-catalog-grid {
     grid-template-columns: 1fr 1fr;
@@ -2127,5 +2256,54 @@ html {
 
   .product-catalog-info .product-price {
     font-size: 1rem;
+  }
+
+  .sobre-mi-section .container {
+    padding: 40px 15px;
+  }
+
+  .sobre-mi-section .liz-text p {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Liz Image Styling */
+.liz-img {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.liz-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Responsive styling for liz-img */
+@media (max-width: 768px) {
+  .liz-img {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .liz-img img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .liz-img {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+
+  .liz-img img {
+    height: 250px;
   }
 }
