@@ -458,6 +458,10 @@ body {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .product-card:hover {
