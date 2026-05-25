@@ -414,6 +414,22 @@ body {
   color: white;
 }
 
+.icon-circle .custom-icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.product-no-image .custom-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.modal-no-image .custom-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
 .benefit-icon p {
   color: #3a2a52;
   font-weight: 600;
@@ -1021,6 +1037,11 @@ body {
   .icon-circle {
     width: 60px;
     height: 60px;
+  }
+
+  .icon-circle .custom-icon {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .icon-circle i {
