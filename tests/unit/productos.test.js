@@ -191,7 +191,8 @@ describe("Modal — closing", () => {
 describe("Modal — hash navigation", () => {
   test("opens modal for matching hash on page load", () => {
     document.body.innerHTML = MODAL_HTML;
-    // jsdom doesn't support real hash navigation, so we set location.hash and re-init
+    // jsdom doesn't implement scrollIntoView — stub it
+    document.getElementById("test-product").scrollIntoView = jest.fn();
     Object.defineProperty(window, "location", {
       value: { hash: "#test-product" },
       writable: true,
