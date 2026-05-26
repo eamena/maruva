@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalDescription = overlay.querySelector("#modalDescription");
   const modalUsage = overlay.querySelector("#modalUsage");
   const modalUsageText = overlay.querySelector("#modalUsageText");
+  const modalIngredients = overlay.querySelector("#modalIngredients");
+  const modalIngredientsText = overlay.querySelector("#modalIngredientsText");
 
   function openModal(card) {
     const img = card.dataset.image;
@@ -35,6 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
       modalUsage.style.display = "block";
     } else {
       modalUsage.style.display = "none";
+    }
+
+    const ingredients = card.dataset.ingredients || "";
+    if (ingredients && modalIngredients) {
+      modalIngredientsText.textContent = ingredients;
+      modalIngredients.style.display = "block";
+    } else if (modalIngredients) {
+      modalIngredients.style.display = "none";
     }
 
     overlay.classList.add("active");
