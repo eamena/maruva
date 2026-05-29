@@ -2157,6 +2157,14 @@ html {
   flex: 1;
 }
 
+.modal-description p {
+  margin: 0 0 0.75rem;
+}
+
+.modal-description p:last-child {
+  margin-bottom: 0;
+}
+
 .modal-usage {
   font-size: 0.88rem;
   color: #666;

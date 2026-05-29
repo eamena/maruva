@@ -29,7 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     modalName.textContent = card.dataset.name;
     modalPrice.textContent = card.dataset.price;
     modalPresentation.textContent = card.dataset.presentation;
-    modalDescription.textContent = card.dataset.description;
+    const descParts = card.dataset.description
+      .split("||")
+      .filter((p) => p.trim());
+    modalDescription.innerHTML = descParts.map((p) => `<p>${p}</p>`).join("");
 
     const usage = card.dataset.usage || "";
     if (usage) {
