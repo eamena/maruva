@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalUsageText = overlay.querySelector("#modalUsageText");
   const modalIngredients = overlay.querySelector("#modalIngredients");
   const modalIngredientsText = overlay.querySelector("#modalIngredientsText");
+  const modalBadge = overlay.querySelector("#modalBadge");
+
+  const badgeLabelMap = {
+    "badge-facial-corporal": "Facial y Corporal",
+    "badge-facial": "Facial",
+  };
 
   function openModal(card) {
     const img = card.dataset.image;
@@ -29,9 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
     modalName.textContent = card.dataset.name;
     modalPrice.textContent = card.dataset.price;
     modalPresentation.textContent = card.dataset.presentation;
-    const descParts = card.dataset.description
-      .split("||")
-      .filter((p) => p.trim());
+
+    const badgeClass = card.dataset.badgeClass || "";
+    if (badgeClass && modalBadge) {
+      modalBadge.className = `product-type-badge ${badgeClass}`;
+      modalBadge.textContent = badgeLabelMap[badgeClass] || "";
+      modalBadge.style.display = "inline-block";
+    } else if (modalBadge) {
+      modalBadge.style.display = "none";
+    }
+
+    const descParts = card.dataset.description.split("||").filter((p) => p.trim());
     modalDescription.innerHTML = descParts.map((p) => `<p>${p}</p>`).join("");
 
     const usage = card.dataset.usage || "";
