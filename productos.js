@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalDescription = overlay.querySelector("#modalDescription");
   const modalUsage = overlay.querySelector("#modalUsage");
   const modalUsageText = overlay.querySelector("#modalUsageText");
+  const modalCare = overlay.querySelector("#modalCare");
+  const modalCareText = overlay.querySelector("#modalCareText");
   const modalIngredients = overlay.querySelector("#modalIngredients");
   const modalIngredientsText = overlay.querySelector("#modalIngredientsText");
   const modalBadge = overlay.querySelector("#modalBadge");
@@ -105,11 +107,19 @@ document.addEventListener("DOMContentLoaded", function () {
     modalDescription.innerHTML = renderRichText(card.dataset.description || "");
 
     const usage = card.dataset.usage || "";
-    if (usage) {
+    if (usage && modalUsage && modalUsageText) {
       modalUsageText.innerHTML = renderRichText(usage);
       modalUsage.style.display = "block";
-    } else {
+    } else if (modalUsage) {
       modalUsage.style.display = "none";
+    }
+
+    const careTips = card.dataset.careTips || "";
+    if (careTips && modalCare && modalCareText) {
+      modalCareText.innerHTML = renderRichText(careTips);
+      modalCare.style.display = "block";
+    } else if (modalCare) {
+      modalCare.style.display = "none";
     }
 
     const ingredients = card.dataset.ingredients || "";

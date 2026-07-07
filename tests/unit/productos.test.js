@@ -6,6 +6,7 @@ const MODAL_HTML = `
     data-description="Descripción test"
     data-ingredients="Ingrediente A, Ingrediente B"
     data-usage="Modo de uso test"
+    data-care-tips="- Secar bien.||- Guardar en jabonera."
     data-image="test.jpg">
   </div>
   <div class="product-catalog-card" id="no-extras-product" tabindex="0"
@@ -30,6 +31,9 @@ const MODAL_HTML = `
         <div id="modalDescription"></div>
         <div id="modalUsage" style="display: none">
           <div id="modalUsageText"></div>
+        </div>
+        <div id="modalCare" style="display: none">
+          <div id="modalCareText"></div>
         </div>
         <div id="modalIngredients" style="display: none">
           <div id="modalIngredientsText"></div>
@@ -142,6 +146,18 @@ describe("Modal — opening", () => {
     expect(document.getElementById("modalUsageText").textContent).toBe(
       "Modo de uso test",
     );
+  });
+
+  test("shows care tips when data-care-tips is set", () => {
+    document.getElementById("test-product").click();
+    expect(document.getElementById("modalCare").style.display).toBe("block");
+    expect(document.querySelector("#modalCare ul")).not.toBeNull();
+    expect(document.querySelectorAll("#modalCare li")).toHaveLength(2);
+  });
+
+  test("hides care tips when data-care-tips is absent", () => {
+    document.getElementById("no-extras-product").click();
+    expect(document.getElementById("modalCare").style.display).toBe("none");
   });
 
   test("hides usage when data-usage is absent", () => {
