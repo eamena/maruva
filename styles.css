@@ -2191,6 +2191,31 @@ html {
   margin-bottom: 0;
 }
 
+.modal-description ol,
+.modal-description ul,
+.modal-usage ol,
+.modal-usage ul,
+.modal-ingredients ol,
+.modal-ingredients ul {
+  margin: 0.4rem 0 0.6rem 1.25rem;
+  padding-left: 1rem;
+}
+
+.modal-description li,
+.modal-usage li,
+.modal-ingredients li {
+  margin-bottom: 0.35rem;
+}
+
+.modal-description ol:last-child,
+.modal-description ul:last-child,
+.modal-usage ol:last-child,
+.modal-usage ul:last-child,
+.modal-ingredients ol:last-child,
+.modal-ingredients ul:last-child {
+  margin-bottom: 0;
+}
+
 .modal-usage {
   font-size: 0.88rem;
   color: #666;

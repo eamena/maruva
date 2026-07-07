@@ -20,6 +20,63 @@ document.addEventListener("DOMContentLoaded", function () {
     "badge-facial": "Facial",
   };
 
+  function escapeHtml(value) {
+    return value
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function renderRichText(rawText) {
+    const blocks = rawText
+      .split("||")
+      .map((part) => part.trim())
+      .filter(Boolean);
+
+    const html = [];
+    let currentListType = null;
+    let currentItems = [];
+
+    function flushList() {
+      if (!currentListType || !currentItems.length) return;
+
+      html.push(
+        `<${currentListType}>${currentItems
+          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .join("")}</${currentListType}>`,
+      );
+      currentListType = null;
+      currentItems = [];
+    }
+
+    for (const block of blocks) {
+      const orderedMatch = block.match(/^(\d+)\.\s*(.+)$/);
+      const bulletMatch = block.match(/^[\-•]\s*(.+)$/);
+
+      if (orderedMatch) {
+        if (currentListType && currentListType !== "ol") flushList();
+        currentListType = "ol";
+        currentItems.push(orderedMatch[2]);
+        continue;
+      }
+
+      if (bulletMatch) {
+        if (currentListType && currentListType !== "ul") flushList();
+        currentListType = "ul";
+        currentItems.push(bulletMatch[1]);
+        continue;
+      }
+
+      flushList();
+      html.push(`<p>${escapeHtml(block)}</p>`);
+    }
+
+    flushList();
+    return html.join("");
+  }
+
   function openModal(card) {
     const img = card.dataset.image;
     if (img) {
@@ -45,12 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
       modalBadge.style.display = "none";
     }
 
-    const descParts = card.dataset.description.split("||").filter((p) => p.trim());
-    modalDescription.innerHTML = descParts.map((p) => `<p>${p}</p>`).join("");
+    modalDescription.innerHTML = renderRichText(card.dataset.description || "");
 
     const usage = card.dataset.usage || "";
     if (usage) {
-      modalUsageText.textContent = usage;
+      modalUsageText.innerHTML = renderRichText(usage);
       modalUsage.style.display = "block";
     } else {
       modalUsage.style.display = "none";
@@ -58,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const ingredients = card.dataset.ingredients || "";
     if (ingredients && modalIngredients) {
-      modalIngredientsText.textContent = ingredients;
+      modalIngredientsText.innerHTML = renderRichText(ingredients);
       modalIngredients.style.display = "block";
     } else if (modalIngredients) {
       modalIngredients.style.display = "none";

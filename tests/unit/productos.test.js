@@ -27,12 +27,12 @@ const MODAL_HTML = `
           <span id="modalPrice"></span>
           <span id="modalPresentation"></span>
         </div>
-        <p id="modalDescription"></p>
+        <div id="modalDescription"></div>
         <div id="modalUsage" style="display: none">
-          <span id="modalUsageText"></span>
+          <div id="modalUsageText"></div>
         </div>
         <div id="modalIngredients" style="display: none">
-          <span id="modalIngredientsText"></span>
+          <div id="modalIngredientsText"></div>
         </div>
       </div>
     </div>
@@ -78,6 +78,45 @@ describe("Modal — opening", () => {
     expect(document.getElementById("modalDescription").textContent).toBe(
       "Descripción test",
     );
+  });
+
+  test("renders ordered lists in description and usage", () => {
+    document.body.innerHTML = `
+      <div class="product-catalog-card" id="list-product" tabindex="0"
+        data-name="Producto con lista"
+        data-price="$75.00"
+        data-presentation="50g"
+        data-description="Intro||1. Primer paso||2. Segundo paso"
+        data-usage="1. Paso uno.||2. Paso dos.||Tip: nota"
+      ></div>
+      ${MODAL_HTML}
+    `;
+    jest.resetModules();
+    require("../../productos.js");
+    document.dispatchEvent(new Event("DOMContentLoaded"));
+    document.getElementById("list-product").click();
+    expect(document.querySelector("#modalDescription ol")).not.toBeNull();
+    expect(document.querySelectorAll("#modalDescription li")).toHaveLength(2);
+    expect(document.querySelector("#modalUsage ol")).not.toBeNull();
+    expect(document.querySelectorAll("#modalUsage li")).toHaveLength(2);
+  });
+
+  test("renders bullet lists in description", () => {
+    document.body.innerHTML = `
+      <div class="product-catalog-card" id="bullet-product" tabindex="0"
+        data-name="Producto con viñetas"
+        data-price="$60.00"
+        data-presentation="40g"
+        data-description="Intro||Libre de:||- Ftalatos||- Parabenos||- Fenoles"
+      ></div>
+      ${MODAL_HTML}
+    `;
+    jest.resetModules();
+    require("../../productos.js");
+    document.dispatchEvent(new Event("DOMContentLoaded"));
+    document.getElementById("bullet-product").click();
+    expect(document.querySelector("#modalDescription ul")).not.toBeNull();
+    expect(document.querySelectorAll("#modalDescription li")).toHaveLength(3);
   });
 
   test("shows ingredients when data-ingredients is set", () => {
