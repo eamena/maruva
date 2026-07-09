@@ -7,9 +7,11 @@
     '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>' +
     '<path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>' +
     "</symbol>" +
-    '<symbol id="icon-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
-    '<path d="M8 2v12M11 1v13M14 1v13M17 3v11"/>' +
-    '<path d="M8 14c-2 0-4 2-4 4v1c0 2 2 3 4 3h8c2 0 4-1 4-3v-1c0-2-2-4-4-4"/>' +
+    '<symbol id="icon-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M18 11V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2"/>' +
+    '<path d="M14 10V4a2 2 0 0 0-2-2 2 2 0 0 0-2 2v2"/>' +
+    '<path d="M10 10.5V6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v8"/>' +
+    '<path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>' +
     "</symbol>" +
     '<symbol id="icon-seedling" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
     '<path d="M12 22V13"/>' +
@@ -27,6 +29,13 @@
     '<circle cx="5" cy="14" r="1.5"/>' +
     '<circle cx="19" cy="14" r="1.5"/>' +
     '<path d="M12 22c-2.2 0-5-1.5-6-4s-1-5 0-7c1-2 3-3 6-3s5 1 6 3 1 5 0 7-3.8 4-6 4z"/>' +
+    "</symbol>" +
+    '<symbol id="icon-rabbit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M6 9c0-1 .5-2 1.5-2.5S10 5.5 10 7v4"/>' +
+    '<path d="M14 9c0-1 -.5-2 -1.5-2.5S10 5.5 10 7v4"/>' +
+    '<ellipse cx="12" cy="14" rx="6" ry="7"/>' +
+    '<circle cx="12" cy="14" r="1.5"/>' +
+    '<path d="M10 19c-.5.5-1 1-1.5 1.5M14 19c.5.5 1 1 1.5 1.5"/>' +
     "</symbol>";
 
   document.body.insertBefore(sprite, document.body.firstChild);

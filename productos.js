@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const badgeLabelMap = {
     "badge-facial-corporal": "Facial y Corporal",
     "badge-facial": "Facial",
+    "badge-bebe": "Para Bebé",
   };
 
   function escapeHtml(value) {
@@ -72,7 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       flushList();
-      html.push(`<p>${escapeHtml(block)}</p>`);
+      const escapedBlock = escapeHtml(block);
+      const processedBlock = escapedBlock.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      html.push(`<p>${processedBlock}</p>`);
     }
 
     flushList();
@@ -97,8 +100,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const badgeClass = card.dataset.badgeClass || "";
     if (badgeClass && modalBadge) {
-      modalBadge.className = `product-type-badge ${badgeClass}`;
-      modalBadge.textContent = badgeLabelMap[badgeClass] || "";
+      let badgeHtml = `<span class="product-type-badge ${badgeClass}">${badgeLabelMap[badgeClass] || ""}</span>`;
+
+      const extraBadgeClass = card.dataset.extraBadge || "";
+      if (extraBadgeClass) {
+        badgeHtml += ` <span class="product-type-badge ${extraBadgeClass}">${badgeLabelMap[extraBadgeClass] || ""}</span>`;
+      }
+
+      modalBadge.innerHTML = badgeHtml;
       modalBadge.style.display = "inline-block";
     } else if (modalBadge) {
       modalBadge.style.display = "none";
