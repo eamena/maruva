@@ -47,7 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       html.push(
         `<${currentListType}>${currentItems
-          .map((item) => `<li>${escapeHtml(item)}</li>`)
+          .map((item) => {
+            const escapedItem = escapeHtml(item);
+            const processedItem = escapedItem.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            return `<li>${processedItem}</li>`;
+          })
           .join("")}</${currentListType}>`,
       );
       currentListType = null;
