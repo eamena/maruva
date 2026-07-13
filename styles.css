@@ -420,6 +420,14 @@ body {
   color: white;
 }
 
+.icon-circle .rabbit-icon {
+  width: 2.45rem;
+  height: 2.45rem;
+  transform: scale(1.06);
+  transform-origin: center;
+  filter: drop-shadow(0 0 0 currentColor);
+}
+
 .product-no-image .custom-icon {
   width: 3.5rem;
   height: 3.5rem;
