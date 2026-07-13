@@ -1870,6 +1870,51 @@ html {
   margin: 0 auto;
 }
 
+/* Per-page hero images for product subpages */
+body.page-jabones .hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/jabones corporales y faciales.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.page-cuidado-facial .hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/Cuidado facial.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.page-cuidado-corporal .category-hero,
+body.page-cuidado-capilar .category-hero,
+body.page-hogar .category-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.page-cuidado-corporal .category-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/Cuidado corporal.jpeg");
+}
+
+body.page-cuidado-capilar .category-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/Cuidado capilar.jpeg");
+}
+
+body.page-hogar .category-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("images/Hogar.jpeg");
+}
+
 .category-products {
   padding: 80px 0;
 }
